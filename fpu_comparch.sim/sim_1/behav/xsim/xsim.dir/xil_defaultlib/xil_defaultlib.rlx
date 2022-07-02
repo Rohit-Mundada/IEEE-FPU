@@ -1,0 +1,23 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Assignment/Assignment 1/Code_v1/addDiffSign.v,1646552175,verilog,,D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Assignment/Assignment 1/Code_v1/addSameSign.v,,addDiffSign,,,,,,,,
+D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Assignment/Assignment 1/Code_v1/addSameSign.v,1646562258,verilog,,D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Assignment/Assignment 1/Code_v1/checkMultExponent.v,,addSameSign,,,,,,,,
+D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Assignment/Assignment 1/Code_v1/checkMultExponent.v,1646573118,verilog,,D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Assignment/Assignment 1/Code_v1/controlUnit.v,,checkMultExponent,,,,,,,,
+D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Assignment/Assignment 1/Code_v1/controlUnit.v,1646627488,verilog,,D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Assignment/Assignment 1/Code_v1/flipFlop.v,,controlUnit,,,,,,,,
+D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Assignment/Assignment 1/Code_v1/flipFlop.v,1646509115,verilog,,D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Assignment/Assignment 1/Code_v1/inputStage.v,,flipFlop,,,,,,,,
+D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Assignment/Assignment 1/Code_v1/fpu_tb1.v,1646627488,verilog,,,,fpu_tb1,,,,,,,,
+D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Assignment/Assignment 1/Code_v1/inputStage.v,1646562258,verilog,,D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Assignment/Assignment 1/Code_v1/main.v,,inputStage,,,,,,,,
+D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Assignment/Assignment 1/Code_v1/main.v,1646627488,verilog,,D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Assignment/Assignment 1/Code_v1/multLeftShift.v,,main,,,,,,,,
+D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Assignment/Assignment 1/Code_v1/multLeftShift.v,1646627488,verilog,,D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Assignment/Assignment 1/Code_v1/multRightShift.v,,multLeftShift,,,,,,,,
+D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Assignment/Assignment 1/Code_v1/multRightShift.v,1646568384,verilog,,D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Assignment/Assignment 1/Code_v1/multRightShiftUn.v,,multRightShift,,,,,,,,
+D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Assignment/Assignment 1/Code_v1/multRightShiftUn.v,1646549830,verilog,,D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Assignment/Assignment 1/Code_v1/multiplier.v,,multRightShiftUn,,,,,,,,
+D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Assignment/Assignment 1/Code_v1/multiplier.v,1646552943,verilog,,D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Assignment/Assignment 1/Code_v1/mux.v,,multiplier,,,,,,,,
+D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Assignment/Assignment 1/Code_v1/mux.v,1646398742,verilog,,D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Assignment/Assignment 1/Code_v1/mux4_1.v,,mux,,,,,,,,
+D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Assignment/Assignment 1/Code_v1/mux4_1.v,1646476776,verilog,,D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Assignment/Assignment 1/Code_v1/outputStage.v,,mux4_1,,,,,,,,
+D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Assignment/Assignment 1/Code_v1/outputStage.v,1646572142,verilog,,D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Assignment/Assignment 1/Code_v1/preAdder.v,,outputStage,,,,,,,,
+D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Assignment/Assignment 1/Code_v1/preAdder.v,1646552175,verilog,,D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Assignment/Assignment 1/Code_v1/shiftEquExp.v,,preAdder,,,,,,,,
+D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Assignment/Assignment 1/Code_v1/shiftEquExp.v,1646627488,verilog,,D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Assignment/Assignment 1/Code_v1/signAdder.v,,shiftEquExp,,,,,,,,
+D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Assignment/Assignment 1/Code_v1/signAdder.v,1646543466,verilog,,D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Assignment/Assignment 1/Code_v1/fpu_tb1.v,,signAdder,,,,,,,,
+D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Assignment/Assignment 1/fpu_comparch/fpu_comparch.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,

@@ -1,0 +1,26 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../Code_v1/addDiffSign.v" \
+"../../../../../Code_v1/addSameSign.v" \
+"../../../../../Code_v1/checkMultExponent.v" \
+"../../../../../Code_v1/controlUnit.v" \
+"../../../../../Code_v1/flipFlop.v" \
+"../../../../../Code_v1/inputStage.v" \
+"../../../../../Code_v1/main.v" \
+"../../../../../Code_v1/multLeftShift.v" \
+"../../../../../Code_v1/multRightShift.v" \
+"../../../../../Code_v1/multRightShiftUn.v" \
+"../../../../../Code_v1/multiplier.v" \
+"../../../../../Code_v1/mux.v" \
+"../../../../../Code_v1/mux4_1.v" \
+"../../../../../Code_v1/outputStage.v" \
+"../../../../../Code_v1/preAdder.v" \
+"../../../../../Code_v1/shiftEquExp.v" \
+"../../../../../Code_v1/signAdder.v" \
+"../../../../../Code_v1/fpu_tb1.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

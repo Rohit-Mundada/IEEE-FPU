@@ -1,0 +1,154 @@
+
+*** Running vivado
+    with args -log fpu_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source fpu_wrapper.tcl -notrace
+
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source fpu_wrapper.tcl -notrace
+Command: open_checkpoint {D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.runs/impl_1/fpu_wrapper.dcp}
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.055 . Memory (MB): peak = 1011.125 ; gain = 2.488
+CRITICAL WARNING: [Board 49-67] The board_part definition was not found for digilentinc.com:zybo-z7-20:part0:1.0. This can happen sometimes when you use custom board part. You can resolve this issue by setting 'board.repoPaths' parameter, pointing to the location of custom board files. Valid board_part values can be retrieved with the 'get_board_parts' Tcl command.
+CRITICAL WARNING: [Board 49-67] The board_part definition was not found for digilentinc.com:zybo-z7-20:part0:1.0. This can happen sometimes when you use custom board part. You can resolve this issue by setting 'board.repoPaths' parameter, pointing to the location of custom board files. Valid board_part values can be retrieved with the 'get_board_parts' Tcl command.
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 1021.414 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 34 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1179.762 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2020.2 (64-bit) build 3064766
+open_checkpoint: Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1179.762 ; gain = 180.555
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/addDiffSign_0/inst/New_Exp[0] has multiple drivers: fpu_i/addDiffSign_0/inst/New_Exp_reg[0]/Q, and fpu_i/addDiffSign_0/inst/New_Exp_reg[0]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/addDiffSign_0/inst/New_Exp[1] has multiple drivers: fpu_i/addDiffSign_0/inst/New_Exp_reg[1]/Q, and fpu_i/addDiffSign_0/inst/New_Exp_reg[1]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/addDiffSign_0/inst/New_Exp[2] has multiple drivers: fpu_i/addDiffSign_0/inst/New_Exp_reg[2]/Q, and fpu_i/addDiffSign_0/inst/New_Exp_reg[2]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/addDiffSign_0/inst/New_Exp[3] has multiple drivers: fpu_i/addDiffSign_0/inst/New_Exp_reg[3]/Q, and fpu_i/addDiffSign_0/inst/New_Exp_reg[3]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/addDiffSign_0/inst/New_Exp[4] has multiple drivers: fpu_i/addDiffSign_0/inst/New_Exp_reg[4]/Q, and fpu_i/addDiffSign_0/inst/New_Exp_reg[4]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/addDiffSign_0/inst/New_Exp[5] has multiple drivers: fpu_i/addDiffSign_0/inst/New_Exp_reg[5]/Q, and fpu_i/addDiffSign_0/inst/New_Exp_reg[5]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/addDiffSign_0/inst/New_Exp[6] has multiple drivers: fpu_i/addDiffSign_0/inst/New_Exp_reg[6]__0/Q, and fpu_i/addDiffSign_0/inst/New_Exp_reg[6]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/addDiffSign_0/inst/New_Exp[7] has multiple drivers: fpu_i/addDiffSign_0/inst/New_Exp_reg[7]__0/Q, and fpu_i/addDiffSign_0/inst/New_Exp_reg[7]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/addDiffSign_0/inst/Q[0] has multiple drivers: fpu_i/addDiffSign_0/inst/Data_Out_reg[0]/Q, and fpu_i/addDiffSign_0/inst/Data_Out_reg[0]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/addDiffSign_0/inst/Q[10] has multiple drivers: fpu_i/addDiffSign_0/inst/Data_Out_reg[10]/Q, and fpu_i/addDiffSign_0/inst/Data_Out_reg[10]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/addDiffSign_0/inst/Q[11] has multiple drivers: fpu_i/addDiffSign_0/inst/Data_Out_reg[11]__0/Q, and fpu_i/addDiffSign_0/inst/Data_Out_reg[11]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/addDiffSign_0/inst/Q[12] has multiple drivers: fpu_i/addDiffSign_0/inst/Data_Out_reg[12]/Q, and fpu_i/addDiffSign_0/inst/Data_Out_reg[12]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/addDiffSign_0/inst/Q[13] has multiple drivers: fpu_i/addDiffSign_0/inst/Data_Out_reg[13]__0/Q, and fpu_i/addDiffSign_0/inst/Data_Out_reg[13]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/addDiffSign_0/inst/Q[14] has multiple drivers: fpu_i/addDiffSign_0/inst/Data_Out_reg[14]__0/Q, and fpu_i/addDiffSign_0/inst/Data_Out_reg[14]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/addDiffSign_0/inst/Q[15] has multiple drivers: fpu_i/addDiffSign_0/inst/Data_Out_reg[15]/Q, and fpu_i/addDiffSign_0/inst/Data_Out_reg[15]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/addDiffSign_0/inst/Q[16] has multiple drivers: fpu_i/addDiffSign_0/inst/Data_Out_reg[16]/Q, and fpu_i/addDiffSign_0/inst/Data_Out_reg[16]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/addDiffSign_0/inst/Q[17] has multiple drivers: fpu_i/addDiffSign_0/inst/Data_Out_reg[17]/Q, and fpu_i/addDiffSign_0/inst/Data_Out_reg[17]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/addDiffSign_0/inst/Q[18] has multiple drivers: fpu_i/addDiffSign_0/inst/Data_Out_reg[18]__0/Q, and fpu_i/addDiffSign_0/inst/Data_Out_reg[18]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/addDiffSign_0/inst/Q[19] has multiple drivers: fpu_i/addDiffSign_0/inst/Data_Out_reg[19]/Q, and fpu_i/addDiffSign_0/inst/Data_Out_reg[19]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/addDiffSign_0/inst/Q[1] has multiple drivers: fpu_i/addDiffSign_0/inst/Data_Out_reg[1]/Q, and fpu_i/addDiffSign_0/inst/Data_Out_reg[1]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/addDiffSign_0/inst/Q[20] has multiple drivers: fpu_i/addDiffSign_0/inst/Data_Out_reg[20]/Q, and fpu_i/addDiffSign_0/inst/Data_Out_reg[20]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/addDiffSign_0/inst/Q[21] has multiple drivers: fpu_i/addDiffSign_0/inst/Data_Out_reg[21]__0/Q, and fpu_i/addDiffSign_0/inst/Data_Out_reg[21]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/addDiffSign_0/inst/Q[22] has multiple drivers: fpu_i/addDiffSign_0/inst/Data_Out_reg[22]__0/Q, and fpu_i/addDiffSign_0/inst/Data_Out_reg[22]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/addDiffSign_0/inst/Q[23] has multiple drivers: fpu_i/addDiffSign_0/inst/Data_Out_reg[23]__0/Q, and fpu_i/addDiffSign_0/inst/Data_Out_reg[23]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/addDiffSign_0/inst/Q[2] has multiple drivers: fpu_i/addDiffSign_0/inst/Data_Out_reg[2]__0/Q, and fpu_i/addDiffSign_0/inst/Data_Out_reg[2]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/addDiffSign_0/inst/Q[3] has multiple drivers: fpu_i/addDiffSign_0/inst/Data_Out_reg[3]/Q, and fpu_i/addDiffSign_0/inst/Data_Out_reg[3]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/addDiffSign_0/inst/Q[4] has multiple drivers: fpu_i/addDiffSign_0/inst/Data_Out_reg[4]/Q, and fpu_i/addDiffSign_0/inst/Data_Out_reg[4]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/addDiffSign_0/inst/Q[5] has multiple drivers: fpu_i/addDiffSign_0/inst/Data_Out_reg[5]/Q, and fpu_i/addDiffSign_0/inst/Data_Out_reg[5]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/addDiffSign_0/inst/Q[6] has multiple drivers: fpu_i/addDiffSign_0/inst/Data_Out_reg[6]__0/Q, and fpu_i/addDiffSign_0/inst/Data_Out_reg[6]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/addDiffSign_0/inst/Q[7] has multiple drivers: fpu_i/addDiffSign_0/inst/Data_Out_reg[7]/Q, and fpu_i/addDiffSign_0/inst/Data_Out_reg[7]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/addDiffSign_0/inst/Q[8] has multiple drivers: fpu_i/addDiffSign_0/inst/Data_Out_reg[8]__0/Q, and fpu_i/addDiffSign_0/inst/Data_Out_reg[8]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/addDiffSign_0/inst/Q[9] has multiple drivers: fpu_i/addDiffSign_0/inst/Data_Out_reg[9]/Q, and fpu_i/addDiffSign_0/inst/Data_Out_reg[9]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/addDiffSign_0/inst/shift_count[0] has multiple drivers: fpu_i/addDiffSign_0/inst/shift_count_reg[0]/Q, and fpu_i/addDiffSign_0/inst/shift_count_reg[0]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/addDiffSign_0/inst/shift_count[1] has multiple drivers: fpu_i/addDiffSign_0/inst/shift_count_reg[1]__0/Q, and fpu_i/addDiffSign_0/inst/shift_count_reg[1]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/addDiffSign_0/inst/shift_count[2] has multiple drivers: fpu_i/addDiffSign_0/inst/shift_count_reg[2]__0/Q, and fpu_i/addDiffSign_0/inst/shift_count_reg[2]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/addDiffSign_0/inst/shift_count[3] has multiple drivers: fpu_i/addDiffSign_0/inst/shift_count_reg[3]/Q, and fpu_i/addDiffSign_0/inst/shift_count_reg[3]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/addDiffSign_0/inst/shift_count[4] has multiple drivers: fpu_i/addDiffSign_0/inst/shift_count_reg[4]/Q, and fpu_i/addDiffSign_0/inst/shift_count_reg[4]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/checkMultExponent_0/inst/MFinal has multiple drivers: fpu_i/checkMultExponent_0/inst/MFinal_INST_0/O, and fpu_i/checkMultExponent_0/inst/MFinal_reg/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/flipFlop_0/inst/E_new[0] has multiple drivers: fpu_i/flipFlop_0/inst/E_new_reg[0]/Q, and fpu_i/multLeftShift_0/inst/New_Exp_reg[0]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/flipFlop_0/inst/E_new[1] has multiple drivers: fpu_i/flipFlop_0/inst/E_new_reg[1]/Q, and fpu_i/multLeftShift_0/inst/New_Exp_reg[1]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/flipFlop_0/inst/E_new[2] has multiple drivers: fpu_i/flipFlop_0/inst/E_new_reg[2]/Q, and fpu_i/multLeftShift_0/inst/New_Exp_reg[2]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/flipFlop_0/inst/E_new[3] has multiple drivers: fpu_i/flipFlop_0/inst/E_new_reg[3]/Q, and fpu_i/multLeftShift_0/inst/New_Exp_reg[3]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/flipFlop_0/inst/E_new[4] has multiple drivers: fpu_i/flipFlop_0/inst/E_new_reg[4]/Q, and fpu_i/multLeftShift_0/inst/New_Exp_reg[4]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/flipFlop_0/inst/E_new[5] has multiple drivers: fpu_i/flipFlop_0/inst/E_new_reg[5]/Q, and fpu_i/multLeftShift_0/inst/New_Exp_reg[5]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/flipFlop_0/inst/E_new[6] has multiple drivers: fpu_i/flipFlop_0/inst/E_new_reg[6]/Q, and fpu_i/multLeftShift_0/inst/New_Exp_reg[6]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/flipFlop_0/inst/E_new[7] has multiple drivers: fpu_i/flipFlop_0/inst/E_new_reg[7]/Q, and fpu_i/multLeftShift_0/inst/New_Exp_reg[7]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/flipFlop_0/inst/M_new[0] has multiple drivers: fpu_i/flipFlop_0/inst/M_new_reg[0]/Q, and fpu_i/multLeftShift_0/inst/Temp_Data_reg[0]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/flipFlop_0/inst/M_new[10] has multiple drivers: fpu_i/flipFlop_0/inst/M_new_reg[10]/Q, and fpu_i/multLeftShift_0/inst/Temp_Data_reg[10]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/flipFlop_0/inst/M_new[11] has multiple drivers: fpu_i/flipFlop_0/inst/M_new_reg[11]/Q, and fpu_i/multLeftShift_0/inst/Temp_Data_reg[11]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/flipFlop_0/inst/M_new[12] has multiple drivers: fpu_i/flipFlop_0/inst/M_new_reg[12]/Q, and fpu_i/multLeftShift_0/inst/Temp_Data_reg[12]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/flipFlop_0/inst/M_new[13] has multiple drivers: fpu_i/flipFlop_0/inst/M_new_reg[13]/Q, and fpu_i/multLeftShift_0/inst/Temp_Data_reg[13]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/flipFlop_0/inst/M_new[14] has multiple drivers: fpu_i/flipFlop_0/inst/M_new_reg[14]/Q, and fpu_i/multLeftShift_0/inst/Temp_Data_reg[14]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/flipFlop_0/inst/M_new[15] has multiple drivers: fpu_i/flipFlop_0/inst/M_new_reg[15]/Q, and fpu_i/multLeftShift_0/inst/Temp_Data_reg[15]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/flipFlop_0/inst/M_new[16] has multiple drivers: fpu_i/flipFlop_0/inst/M_new_reg[16]/Q, and fpu_i/multLeftShift_0/inst/Temp_Data_reg[16]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/flipFlop_0/inst/M_new[17] has multiple drivers: fpu_i/flipFlop_0/inst/M_new_reg[17]/Q, and fpu_i/multLeftShift_0/inst/Temp_Data_reg[17]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/flipFlop_0/inst/M_new[18] has multiple drivers: fpu_i/flipFlop_0/inst/M_new_reg[18]/Q, and fpu_i/multLeftShift_0/inst/Temp_Data_reg[18]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/flipFlop_0/inst/M_new[19] has multiple drivers: fpu_i/flipFlop_0/inst/M_new_reg[19]/Q, and fpu_i/multLeftShift_0/inst/Temp_Data_reg[19]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/flipFlop_0/inst/M_new[1] has multiple drivers: fpu_i/flipFlop_0/inst/M_new_reg[1]/Q, and fpu_i/multLeftShift_0/inst/Temp_Data_reg[1]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/flipFlop_0/inst/M_new[20] has multiple drivers: fpu_i/flipFlop_0/inst/M_new_reg[20]/Q, and fpu_i/multLeftShift_0/inst/Temp_Data_reg[20]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/flipFlop_0/inst/M_new[21] has multiple drivers: fpu_i/flipFlop_0/inst/M_new_reg[21]/Q, and fpu_i/multLeftShift_0/inst/Temp_Data_reg[21]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/flipFlop_0/inst/M_new[22] has multiple drivers: fpu_i/flipFlop_0/inst/M_new_reg[22]/Q, and fpu_i/multLeftShift_0/inst/Temp_Data_reg[22]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/flipFlop_0/inst/M_new[23] has multiple drivers: fpu_i/flipFlop_0/inst/M_new_reg[23]/Q, and fpu_i/multLeftShift_0/inst/Temp_Data_reg[23]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/flipFlop_0/inst/M_new[24] has multiple drivers: fpu_i/flipFlop_0/inst/M_new_reg[24]/Q, and fpu_i/multLeftShift_0/inst/Temp_Data_reg[24]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/flipFlop_0/inst/M_new[25] has multiple drivers: fpu_i/flipFlop_0/inst/M_new_reg[25]/Q, and fpu_i/multLeftShift_0/inst/Temp_Data_reg[25]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/flipFlop_0/inst/M_new[26] has multiple drivers: fpu_i/flipFlop_0/inst/M_new_reg[26]/Q, and fpu_i/multLeftShift_0/inst/Temp_Data_reg[26]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/flipFlop_0/inst/M_new[27] has multiple drivers: fpu_i/flipFlop_0/inst/M_new_reg[27]/Q, and fpu_i/multLeftShift_0/inst/Temp_Data_reg[27]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/flipFlop_0/inst/M_new[28] has multiple drivers: fpu_i/flipFlop_0/inst/M_new_reg[28]/Q, and fpu_i/multLeftShift_0/inst/Temp_Data_reg[28]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/flipFlop_0/inst/M_new[29] has multiple drivers: fpu_i/flipFlop_0/inst/M_new_reg[29]/Q, and fpu_i/multLeftShift_0/inst/Temp_Data_reg[29]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/flipFlop_0/inst/M_new[2] has multiple drivers: fpu_i/flipFlop_0/inst/M_new_reg[2]/Q, and fpu_i/multLeftShift_0/inst/Temp_Data_reg[2]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/flipFlop_0/inst/M_new[30] has multiple drivers: fpu_i/flipFlop_0/inst/M_new_reg[30]/Q, and fpu_i/multLeftShift_0/inst/Temp_Data_reg[30]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/flipFlop_0/inst/M_new[31] has multiple drivers: fpu_i/flipFlop_0/inst/M_new_reg[31]/Q, and fpu_i/multLeftShift_0/inst/Temp_Data_reg[31]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/flipFlop_0/inst/M_new[32] has multiple drivers: fpu_i/flipFlop_0/inst/M_new_reg[32]/Q, and fpu_i/multLeftShift_0/inst/Temp_Data_reg[32]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/flipFlop_0/inst/M_new[33] has multiple drivers: fpu_i/flipFlop_0/inst/M_new_reg[33]/Q, and fpu_i/multLeftShift_0/inst/Temp_Data_reg[33]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/flipFlop_0/inst/M_new[34] has multiple drivers: fpu_i/flipFlop_0/inst/M_new_reg[34]/Q, and fpu_i/multLeftShift_0/inst/Temp_Data_reg[34]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/flipFlop_0/inst/M_new[35] has multiple drivers: fpu_i/flipFlop_0/inst/M_new_reg[35]/Q, and fpu_i/multLeftShift_0/inst/Temp_Data_reg[35]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/flipFlop_0/inst/M_new[36] has multiple drivers: fpu_i/flipFlop_0/inst/M_new_reg[36]/Q, and fpu_i/multLeftShift_0/inst/Temp_Data_reg[36]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/flipFlop_0/inst/M_new[37] has multiple drivers: fpu_i/flipFlop_0/inst/M_new_reg[37]/Q, and fpu_i/multLeftShift_0/inst/Temp_Data_reg[37]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/flipFlop_0/inst/M_new[38] has multiple drivers: fpu_i/flipFlop_0/inst/M_new_reg[38]/Q, and fpu_i/multLeftShift_0/inst/Temp_Data_reg[38]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/flipFlop_0/inst/M_new[39] has multiple drivers: fpu_i/flipFlop_0/inst/M_new_reg[39]/Q, and fpu_i/multLeftShift_0/inst/Temp_Data_reg[39]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/flipFlop_0/inst/M_new[3] has multiple drivers: fpu_i/flipFlop_0/inst/M_new_reg[3]/Q, and fpu_i/multLeftShift_0/inst/Temp_Data_reg[3]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/flipFlop_0/inst/M_new[40] has multiple drivers: fpu_i/flipFlop_0/inst/M_new_reg[40]/Q, and fpu_i/multLeftShift_0/inst/Temp_Data_reg[40]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/flipFlop_0/inst/M_new[41] has multiple drivers: fpu_i/flipFlop_0/inst/M_new_reg[41]/Q, and fpu_i/multLeftShift_0/inst/Temp_Data_reg[41]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/flipFlop_0/inst/M_new[42] has multiple drivers: fpu_i/flipFlop_0/inst/M_new_reg[42]/Q, and fpu_i/multLeftShift_0/inst/Temp_Data_reg[42]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/flipFlop_0/inst/M_new[43] has multiple drivers: fpu_i/flipFlop_0/inst/M_new_reg[43]/Q, and fpu_i/multLeftShift_0/inst/Temp_Data_reg[43]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/flipFlop_0/inst/M_new[44] has multiple drivers: fpu_i/flipFlop_0/inst/M_new_reg[44]/Q, and fpu_i/multLeftShift_0/inst/Temp_Data_reg[44]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/flipFlop_0/inst/M_new[45] has multiple drivers: fpu_i/flipFlop_0/inst/M_new_reg[45]/Q, and fpu_i/multLeftShift_0/inst/Temp_Data_reg[45]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/flipFlop_0/inst/M_new[46] has multiple drivers: fpu_i/flipFlop_0/inst/M_new_reg[46]/Q, and fpu_i/multLeftShift_0/inst/Temp_Data_reg[46]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/flipFlop_0/inst/M_new[4] has multiple drivers: fpu_i/flipFlop_0/inst/M_new_reg[4]/Q, and fpu_i/multLeftShift_0/inst/Temp_Data_reg[4]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/flipFlop_0/inst/M_new[5] has multiple drivers: fpu_i/flipFlop_0/inst/M_new_reg[5]/Q, and fpu_i/multLeftShift_0/inst/Temp_Data_reg[5]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/flipFlop_0/inst/M_new[6] has multiple drivers: fpu_i/flipFlop_0/inst/M_new_reg[6]/Q, and fpu_i/multLeftShift_0/inst/Temp_Data_reg[6]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/flipFlop_0/inst/M_new[7] has multiple drivers: fpu_i/flipFlop_0/inst/M_new_reg[7]/Q, and fpu_i/multLeftShift_0/inst/Temp_Data_reg[7]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/flipFlop_0/inst/M_new[8] has multiple drivers: fpu_i/flipFlop_0/inst/M_new_reg[8]/Q, and fpu_i/multLeftShift_0/inst/Temp_Data_reg[8]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/flipFlop_0/inst/M_new[9] has multiple drivers: fpu_i/flipFlop_0/inst/M_new_reg[9]/Q, and fpu_i/multLeftShift_0/inst/Temp_Data_reg[9]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/flipFlop_1/inst/M_new[23] has multiple drivers: fpu_i/multRightShiftUn_0/inst/Temp_Data_reg[23]/Q, and fpu_i/flipFlop_1/inst/M_new_reg[23]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/flipFlop_1/inst/M_new[24] has multiple drivers: fpu_i/multRightShiftUn_0/inst/Temp_Data_reg[24]/Q, and fpu_i/flipFlop_1/inst/M_new_reg[24]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/flipFlop_1/inst/M_new[25] has multiple drivers: fpu_i/multRightShiftUn_0/inst/Temp_Data_reg[25]/Q, and fpu_i/flipFlop_1/inst/M_new_reg[25]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/flipFlop_1/inst/M_new[26] has multiple drivers: fpu_i/multRightShiftUn_0/inst/Temp_Data_reg[26]/Q, and fpu_i/flipFlop_1/inst/M_new_reg[26]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/flipFlop_1/inst/M_new[27] has multiple drivers: fpu_i/multRightShiftUn_0/inst/Temp_Data_reg[27]/Q, and fpu_i/flipFlop_1/inst/M_new_reg[27]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/flipFlop_1/inst/M_new[28] has multiple drivers: fpu_i/multRightShiftUn_0/inst/Temp_Data_reg[28]/Q, and fpu_i/flipFlop_1/inst/M_new_reg[28]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net fpu_i/flipFlop_1/inst/M_new[29] has multiple drivers: fpu_i/multRightShiftUn_0/inst/Temp_Data_reg[29]/Q, and fpu_i/flipFlop_1/inst/M_new_reg[29]/Q.
+INFO: [Common 17-14] Message 'DRC MDRV-1' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Project 1-461] DRC finished with 159 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+ERROR: [Vivado_Tcl 4-78] Error(s) found during DRC. Opt_design not run.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1199.035 ; gain = 19.273
+INFO: [Common 17-83] Releasing license: Implementation
+17 Infos, 0 Warnings, 2 Critical Warnings and 101 Errors encountered.
+opt_design failed
+ERROR: [Common 17-39] 'opt_design' failed due to earlier errors.
+
+INFO: [Common 17-206] Exiting Vivado at Mon Mar  7 11:22:30 2022...

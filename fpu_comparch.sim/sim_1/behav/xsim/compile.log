@@ -1,0 +1,38 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Assignment/Assignment 1/Code_v1/addDiffSign.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module addDiffSign
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Assignment/Assignment 1/Code_v1/addSameSign.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module addSameSign
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Assignment/Assignment 1/Code_v1/checkMultExponent.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module checkMultExponent
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Assignment/Assignment 1/Code_v1/controlUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Assignment/Assignment 1/Code_v1/flipFlop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module flipFlop
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Assignment/Assignment 1/Code_v1/inputStage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inputStage
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Assignment/Assignment 1/Code_v1/main.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Assignment/Assignment 1/Code_v1/multLeftShift.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multLeftShift
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Assignment/Assignment 1/Code_v1/multRightShift.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multRightShift
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Assignment/Assignment 1/Code_v1/multRightShiftUn.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multRightShiftUn
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Assignment/Assignment 1/Code_v1/multiplier.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multiplier
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Assignment/Assignment 1/Code_v1/mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Assignment/Assignment 1/Code_v1/mux4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux4_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Assignment/Assignment 1/Code_v1/outputStage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module outputStage
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Assignment/Assignment 1/Code_v1/preAdder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module preAdder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Assignment/Assignment 1/Code_v1/shiftEquExp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shiftEquExp
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Assignment/Assignment 1/Code_v1/signAdder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module signAdder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Assignment/Assignment 1/Code_v1/fpu_tb1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpu_tb1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Assignment/Assignment 1/fpu_comparch/fpu_comparch.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

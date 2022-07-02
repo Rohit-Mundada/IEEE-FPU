@@ -1,0 +1,347 @@
+{
+   "ActiveEmotionalView":"FPU_block_design",
+   "Default View_ScaleFactor":"0.385517",
+   "Default View_TopLeft":"-140,0",
+   "ExpandedHierarchyInLayout":"",
+   "FPU_block_design_DefaultLayers":"",
+   "FPU_block_design_DefaultScaleFactor":"0.385517",
+   "FPU_block_design_DefaultTopLeft":"-140,0",
+   "FPU_block_design_ExpandedHierarchyInLayout":"",
+   "FPU_block_design_Layers":"",
+   "FPU_block_design_Layout":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS-threadsafe
+#  -string -flagsOSRD
+preplace port clk -pg 1 -lvl 0 -x 0 -y 480 -defaultsOSRD
+preplace port In_Data_Valid -pg 1 -lvl 0 -x 0 -y 920 -defaultsOSRD
+preplace port Op -pg 1 -lvl 0 -x 0 -y 950 -defaultsOSRD
+preplace port Out_Data_Valid -pg 1 -lvl 10 -x 3390 -y 880 -defaultsOSRD
+preplace portBus Data_1 -pg 1 -lvl 0 -x 0 -y 860 -defaultsOSRD
+preplace portBus Data_2 -pg 1 -lvl 0 -x 0 -y 890 -defaultsOSRD
+preplace portBus Data_Out -pg 1 -lvl 10 -x 3390 -y 850 -defaultsOSRD
+preplace inst inputStage_0 -pg 1 -lvl 1 -x 180 -y 890 -defaultsOSRD
+preplace inst preAdder_0 -pg 1 -lvl 3 -x 790 -y 300 -defaultsOSRD
+preplace inst shiftEquExp_0 -pg 1 -lvl 4 -x 1100 -y 270 -defaultsOSRD
+preplace inst signAdder_0 -pg 1 -lvl 5 -x 1460 -y 190 -defaultsOSRD
+preplace inst addDiffSign_0 -pg 1 -lvl 6 -x 1870 -y 100 -defaultsOSRD
+preplace inst addSameSign_0 -pg 1 -lvl 7 -x 2310 -y 200 -defaultsOSRD
+preplace inst mux_0 -pg 1 -lvl 7 -x 2310 -y 360 -defaultsOSRD
+preplace inst mux_1 -pg 1 -lvl 8 -x 2790 -y 190 -defaultsOSRD
+preplace inst mux_2 -pg 1 -lvl 8 -x 2790 -y 330 -defaultsOSRD
+preplace inst controlUnit_0 -pg 1 -lvl 8 -x 2790 -y 860 -defaultsOSRD
+preplace inst outputStage_0 -pg 1 -lvl 9 -x 3200 -y 870 -defaultsOSRD
+preplace inst multiplier_0 -pg 1 -lvl 2 -x 480 -y 720 -defaultsOSRD
+preplace inst multLeftShift_0 -pg 1 -lvl 5 -x 1460 -y 390 -defaultsOSRD
+preplace inst multRightShift_0 -pg 1 -lvl 5 -x 1460 -y 540 -defaultsOSRD
+preplace inst xlslice_0 -pg 1 -lvl 4 -x 1100 -y 460 -defaultsOSRD
+preplace inst mux_3 -pg 1 -lvl 6 -x 1870 -y 630 -defaultsOSRD
+preplace inst mux_4 -pg 1 -lvl 7 -x 2310 -y 520 -defaultsOSRD
+preplace inst mux_5 -pg 1 -lvl 7 -x 2310 -y 660 -defaultsOSRD
+preplace inst flipFlop_0 -pg 1 -lvl 3 -x 790 -y 490 -defaultsOSRD
+preplace inst xlslice_1 -pg 1 -lvl 4 -x 1100 -y 580 -defaultsOSRD
+preplace inst mux4_1_0 -pg 1 -lvl 8 -x 2790 -y 1110 -defaultsOSRD
+preplace inst multRightShiftUn_0 -pg 1 -lvl 6 -x 1870 -y 900 -defaultsOSRD
+preplace inst flipFlop_1 -pg 1 -lvl 5 -x 1460 -y 840 -defaultsOSRD
+preplace inst checkMultExponent_0 -pg 1 -lvl 7 -x 2310 -y 880 -defaultsOSRD
+preplace inst xlslice_2 -pg 1 -lvl 7 -x 2310 -y 1290 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 7 -x 2310 -y 1060 -defaultsOSRD
+preplace inst mux4_1_1 -pg 1 -lvl 8 -x 2790 -y 1290 -defaultsOSRD
+preplace inst xlconstant_1 -pg 1 -lvl 7 -x 2310 -y 1190 -defaultsOSRD
+preplace inst xlconstant_2 -pg 1 -lvl 7 -x 2310 -y 1390 -defaultsOSRD
+preplace inst xlslice_3 -pg 1 -lvl 8 -x 2790 -y 570 -defaultsOSRD
+preplace inst xlslice_4 -pg 1 -lvl 8 -x 2790 -y 670 -defaultsOSRD
+preplace inst xlslice_5 -pg 1 -lvl 4 -x 1100 -y 680 -defaultsOSRD
+preplace inst orGate_0 -pg 1 -lvl 5 -x 1460 -y 680 -defaultsOSRD
+preplace inst xorGate_0 -pg 1 -lvl 6 -x 1870 -y 300 -defaultsOSRD
+preplace netloc inputStage_0_Data1_reg 1 1 7 330 410 640 410 930J 380 1250J 620 1680J 530 2050J 440 2580J
+preplace netloc inputStage_0_Data2_reg 1 1 7 320 310 620 90 NJ 90 NJ 90 1690J 210 2110J 280 2600J
+preplace netloc preAdder_0_B 1 3 1 N 270
+preplace netloc preAdder_0_Diff_Exp 1 3 1 960 290n
+preplace netloc preAdder_0_sA 1 3 6 950 180 1260 100 1680 200 2030J 60 NJ 60 3030
+preplace netloc preAdder_0_sB 1 3 6 N 350 1290 290 1670 220 2050J 70 NJ 70 3020J
+preplace netloc preAdder_0_A 1 3 2 940 190 1300J
+preplace netloc shiftEquExp_0_Data_Out 1 4 1 1300 220n
+preplace netloc shiftEquExp_0_shift_ready 1 4 3 NJ 280 1650 230 2090J
+preplace netloc signAdder_0_Carry 1 5 4 1700 380 2060 100 NJ 100 2990J
+preplace netloc signAdder_0_Add_Out 1 5 2 1710 370 2070J
+preplace netloc preAdder_0_Big_Exp 1 3 4 930 80 NJ 80 1640 390 2080J
+preplace netloc addDiffSign_0_shift_ready 1 6 1 2100 110n
+preplace netloc addSameSign_0_Data_Out 1 7 1 N 190
+preplace netloc addDiffSign_0_Data_Out 1 6 2 2040J 80 2640
+preplace netloc addSameSign_0_New_Exp 1 7 1 2610 210n
+preplace netloc addDiffSign_0_New_Exp 1 6 2 NJ 90 2630
+preplace netloc inputStage_0_In_Check 1 1 7 340J 800 NJ 800 NJ 800 1290J 750 NJ 750 NJ 750 2550
+preplace netloc addDiffSign_0_ans_is_zero 1 6 2 2110 110 2590J
+preplace netloc mux_0_MuxOut 1 7 1 2570 360n
+preplace netloc mux_1_MuxOut 1 8 1 3010 190n
+preplace netloc mux_2_MuxOut 1 8 1 2960 330n
+preplace netloc controlUnit_0_Output_Type 1 8 1 2950 850n
+preplace netloc controlUnit_0_Output_En 1 8 1 2940 870n
+preplace netloc multRightShift_0_shift_ready 1 5 1 1620 560n
+preplace netloc multLeftShift_0_Data_Out 1 5 2 1680 520 NJ
+preplace netloc multRightShift_0_Data_Out 1 5 2 1650 540 NJ
+preplace netloc multLeftShift_0_shift_ready 1 5 1 1640 410n
+preplace netloc multLeftShift_0_New_Exp 1 5 2 1630J 710 2120
+preplace netloc multRightShift_0_New_Exp 1 5 2 1620 550 2080J
+preplace netloc multiplier_0_mult_out 1 2 3 620 580 950 400 1260
+preplace netloc multiplier_0_exp_out 1 2 5 630 570 960 520 1240 760 NJ 760 2040
+preplace netloc flipFlop_0_M_new 1 3 2 940 390 1290J
+preplace netloc flipFlop_0_E_new 1 3 1 960 460n
+preplace netloc xlslice_0_Dout 1 4 1 1270J 420n
+preplace netloc xlslice_1_Dout 1 4 1 1290J 550n
+preplace netloc flipFlop_1_M_new 1 5 1 1630 830n
+preplace netloc flipFlop_1_E_new 1 5 1 1620 850n
+preplace netloc mux_3_MuxOut 1 6 1 2060 630n
+preplace netloc multRightShiftUn_0_Mult_Un_R 1 6 1 2120 890n
+preplace netloc checkMultExponent_0_MFinal 1 7 1 2520 890n
+preplace netloc checkMultExponent_0_Mult_Output_Type 1 7 2 2500 1000 3030J
+preplace netloc multRightShiftUn_0_Mult_Out_Un 1 6 2 2090 790 2530J
+preplace netloc multRightShiftUn_0_Mult_Exp_Un 1 6 1 2030 880n
+preplace netloc mux_4_MuxOut 1 7 1 2540 520n
+preplace netloc xlconstant_0_dout 1 7 1 2490 1060n
+preplace netloc xlconstant_1_dout 1 7 1 2490J 1190n
+preplace netloc xlslice_2_Dout 1 7 1 NJ 1290
+preplace netloc mux_5_MuxOut 1 7 1 2510 660n
+preplace netloc xlconstant_2_dout 1 7 1 2560J 1330n
+preplace netloc mux4_1_1_MuxOut 1 8 1 3010 890n
+preplace netloc mux4_1_0_MuxOut 1 8 1 2960 870n
+preplace netloc inputStage_0_Data_Out 1 1 8 NJ 880 NJ 880 NJ 880 1290J 990 NJ 990 NJ 990 NJ 990 2970
+preplace netloc xlslice_3_Dout 1 8 1 3000 570n
+preplace netloc xlslice_4_Dout 1 8 1 2950J 670n
+preplace netloc xlslice_5_Dout 1 4 1 NJ 680
+preplace netloc orGate_0_Mult_Shift_Norm_Sel 1 5 2 1710 720 2100
+preplace netloc xorGate_0_AsrFinalSel 1 6 2 2120 120 2620
+preplace netloc clk_0_1 1 0 9 40 470 NJ 470 630 190 920 360 1300 300 1660 820 2110 780 2630 730 N
+preplace netloc Data1_0_1 1 0 1 20J 860n
+preplace netloc Data2_0_1 1 0 1 NJ 890
+preplace netloc In_Data_Valid_0_1 1 0 8 30 790 NJ 790 NJ 790 NJ 790 1280 740 NJ 740 NJ 740 2560J
+preplace netloc Op_0_1 1 0 9 30 990 NJ 990 NJ 990 NJ 990 1260J 980 NJ 980 NJ 980 2580 980 2980J
+preplace netloc outputStage_0_Data_Out 1 9 1 3370J 850n
+preplace netloc outputStage_0_Out_Data_Valid 1 9 1 NJ 880
+levelinfo -pg 1 0 180 480 790 1100 1460 1870 2310 2790 3200 3390
+pagesize -pg 1 -db -bbox -sgen -140 0 3540 1450
+",
+   "FPU_block_design_Layout_Default":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS-threadsafe
+#  -string -flagsOSRD
+preplace port clk -pg 1 -lvl 0 -x 0 -y 480 -defaultsOSRD
+preplace port In_Data_Valid -pg 1 -lvl 0 -x 0 -y 920 -defaultsOSRD
+preplace port Op -pg 1 -lvl 0 -x 0 -y 950 -defaultsOSRD
+preplace port Out_Data_Valid -pg 1 -lvl 10 -x 3320 -y 880 -defaultsOSRD
+preplace portBus Data_1 -pg 1 -lvl 0 -x 0 -y 860 -defaultsOSRD
+preplace portBus Data_2 -pg 1 -lvl 0 -x 0 -y 890 -defaultsOSRD
+preplace portBus Data_Out -pg 1 -lvl 10 -x 3320 -y 850 -defaultsOSRD
+preplace inst inputStage_0 -pg 1 -lvl 1 -x 180 -y 890 -defaultsOSRD
+preplace inst preAdder_0 -pg 1 -lvl 3 -x 790 -y 300 -defaultsOSRD
+preplace inst shiftEquExp_0 -pg 1 -lvl 4 -x 1100 -y 270 -defaultsOSRD
+preplace inst signAdder_0 -pg 1 -lvl 5 -x 1460 -y 190 -defaultsOSRD
+preplace inst addDiffSign_0 -pg 1 -lvl 6 -x 1870 -y 100 -defaultsOSRD
+preplace inst addSameSign_0 -pg 1 -lvl 7 -x 2310 -y 200 -defaultsOSRD
+preplace inst mux_0 -pg 1 -lvl 7 -x 2310 -y 360 -defaultsOSRD
+preplace inst mux_1 -pg 1 -lvl 8 -x 2740 -y 190 -defaultsOSRD
+preplace inst mux_2 -pg 1 -lvl 8 -x 2740 -y 330 -defaultsOSRD
+preplace inst controlUnit_0 -pg 1 -lvl 8 -x 2740 -y 860 -defaultsOSRD
+preplace inst outputStage_0 -pg 1 -lvl 9 -x 3130 -y 870 -defaultsOSRD
+preplace inst multiplier_0 -pg 1 -lvl 2 -x 480 -y 720 -defaultsOSRD
+preplace inst multLeftShift_0 -pg 1 -lvl 5 -x 1460 -y 390 -defaultsOSRD
+preplace inst multRightShift_0 -pg 1 -lvl 5 -x 1460 -y 540 -defaultsOSRD
+preplace inst xlslice_0 -pg 1 -lvl 4 -x 1100 -y 460 -defaultsOSRD
+preplace inst mux_3 -pg 1 -lvl 6 -x 1870 -y 630 -defaultsOSRD
+preplace inst mux_4 -pg 1 -lvl 7 -x 2310 -y 520 -defaultsOSRD
+preplace inst mux_5 -pg 1 -lvl 7 -x 2310 -y 660 -defaultsOSRD
+preplace inst flipFlop_0 -pg 1 -lvl 3 -x 790 -y 490 -defaultsOSRD
+preplace inst xlslice_1 -pg 1 -lvl 4 -x 1100 -y 580 -defaultsOSRD
+preplace inst mux4_1_0 -pg 1 -lvl 8 -x 2740 -y 1110 -defaultsOSRD
+preplace inst multRightShiftUn_0 -pg 1 -lvl 6 -x 1870 -y 900 -defaultsOSRD
+preplace inst flipFlop_1 -pg 1 -lvl 5 -x 1460 -y 840 -defaultsOSRD
+preplace inst checkMultExponent_0 -pg 1 -lvl 7 -x 2310 -y 880 -defaultsOSRD
+preplace inst xlslice_2 -pg 1 -lvl 7 -x 2310 -y 1290 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 7 -x 2310 -y 1060 -defaultsOSRD
+preplace inst mux4_1_1 -pg 1 -lvl 8 -x 2740 -y 1290 -defaultsOSRD
+preplace inst xlconstant_1 -pg 1 -lvl 7 -x 2310 -y 1190 -defaultsOSRD
+preplace inst xlconstant_2 -pg 1 -lvl 7 -x 2310 -y 1390 -defaultsOSRD
+preplace inst xlslice_3 -pg 1 -lvl 8 -x 2740 -y 570 -defaultsOSRD
+preplace inst xlslice_4 -pg 1 -lvl 8 -x 2740 -y 670 -defaultsOSRD
+preplace inst xlslice_5 -pg 1 -lvl 4 -x 1100 -y 680 -defaultsOSRD
+preplace inst orGate_0 -pg 1 -lvl 5 -x 1460 -y 680 -defaultsOSRD
+preplace inst xorGate_0 -pg 1 -lvl 6 -x 1870 -y 300 -defaultsOSRD
+preplace netloc inputStage_0_Data1_reg 1 1 7 320 640 630 700 920J 740 NJ 740 NJ 740 NJ 740 2520J
+preplace netloc inputStage_0_Data2_reg 1 1 7 340 650 640 750 NJ 750 NJ 750 NJ 750 NJ 750 2530J
+preplace netloc preAdder_0_B 1 3 1 N 270
+preplace netloc preAdder_0_Diff_Exp 1 3 1 960 290n
+preplace netloc preAdder_0_sA 1 3 6 960 350 1260 290 1690 440 NJ 440 NJ 440 2960
+preplace netloc preAdder_0_sB 1 3 6 950 360 1280 300 1630 800 2100J 770 2550J 740 2920J
+preplace netloc preAdder_0_A 1 3 2 930 190 1300J
+preplace netloc shiftEquExp_0_Data_Out 1 4 1 1270 220n
+preplace netloc shiftEquExp_0_shift_ready 1 4 3 NJ 280 1700 400 2080J
+preplace netloc signAdder_0_Carry 1 5 4 1630 200 2090 1000 NJ 1000 2960J
+preplace netloc signAdder_0_Add_Out 1 5 2 1710 210 2100J
+preplace netloc preAdder_0_Big_Exp 1 3 4 920 100 NJ 100 1620 220 NJ
+preplace netloc addDiffSign_0_shift_ready 1 6 1 2120 110n
+preplace netloc addSameSign_0_Data_Out 1 7 1 N 190
+preplace netloc addDiffSign_0_Data_Out 1 6 2 NJ 70 2540
+preplace netloc addSameSign_0_New_Exp 1 7 1 2510 210n
+preplace netloc addDiffSign_0_New_Exp 1 6 2 NJ 90 2520
+preplace netloc inputStage_0_In_Check 1 1 7 330J 870 NJ 870 NJ 870 1250J 930 1710J 820 2050J 970 2580
+preplace netloc addDiffSign_0_ans_is_zero 1 6 2 2110 790 2520J
+preplace netloc mux_0_MuxOut 1 7 1 2570 360n
+preplace netloc mux_1_MuxOut 1 8 1 2950 190n
+preplace netloc mux_2_MuxOut 1 8 1 2930 330n
+preplace netloc controlUnit_0_Output_Type 1 8 1 2920 850n
+preplace netloc controlUnit_0_Output_En 1 8 1 2910 870n
+preplace netloc multRightShift_0_shift_ready 1 5 1 1620 560n
+preplace netloc multLeftShift_0_Data_Out 1 5 2 1680 520 NJ
+preplace netloc multRightShift_0_Data_Out 1 5 2 1650 540 NJ
+preplace netloc multLeftShift_0_shift_ready 1 5 1 1640 410n
+preplace netloc multLeftShift_0_New_Exp 1 5 2 NJ 390 2130
+preplace netloc multRightShift_0_New_Exp 1 5 2 1620 550 2100J
+preplace netloc multiplier_0_mult_out 1 2 3 650 710 930 520 1270
+preplace netloc multiplier_0_exp_out 1 2 5 660 720 950 780 1260 920 1640J 790 2060
+preplace netloc flipFlop_0_M_new 1 3 2 950 400 NJ
+preplace netloc flipFlop_0_E_new 1 3 1 960 460n
+preplace netloc xlslice_0_Dout 1 4 1 1260J 420n
+preplace netloc xlslice_1_Dout 1 4 1 1290J 550n
+preplace netloc flipFlop_1_M_new 1 5 1 1660 830n
+preplace netloc flipFlop_1_E_new 1 5 1 1650 850n
+preplace netloc mux_3_MuxOut 1 6 1 2070 630n
+preplace netloc multRightShiftUn_0_Mult_Un_R 1 6 1 2120 890n
+preplace netloc checkMultExponent_0_MFinal 1 7 1 2520 890n
+preplace netloc checkMultExponent_0_Mult_Output_Type 1 7 2 2500 1010 2900J
+preplace netloc multRightShiftUn_0_Mult_Out_Un 1 6 2 2030 1120 2580J
+preplace netloc multRightShiftUn_0_Mult_Exp_Un 1 6 1 2040 880n
+preplace netloc mux_4_MuxOut 1 7 1 2540 520n
+preplace netloc xlconstant_0_dout 1 7 1 2490 1060n
+preplace netloc xlconstant_1_dout 1 7 1 2490J 1190n
+preplace netloc xlslice_2_Dout 1 7 1 NJ 1290
+preplace netloc mux_5_MuxOut 1 7 1 2510 660n
+preplace netloc xlconstant_2_dout 1 7 1 2540J 1330n
+preplace netloc mux4_1_1_MuxOut 1 8 1 2950 890n
+preplace netloc mux4_1_0_MuxOut 1 8 1 2940 870n
+preplace netloc inputStage_0_Data_Out 1 1 8 NJ 880 NJ 880 NJ 880 1240J 940 1670J 980 NJ 980 NJ 980 2930
+preplace netloc xlslice_3_Dout 1 8 1 2940 570n
+preplace netloc xlslice_4_Dout 1 8 1 2910J 670n
+preplace netloc xlslice_5_Dout 1 4 1 NJ 680
+preplace netloc orGate_0_Mult_Shift_Norm_Sel 1 5 2 1700 710 2080
+preplace netloc xorGate_0_AsrFinalSel 1 6 2 2130 280 2570
+preplace netloc clk_0_1 1 0 9 40 480 NJ 480 620 410 940 390 1300 620 1670 810 2130 780 2590 730 N
+preplace netloc Data1_0_1 1 0 1 20J 860n
+preplace netloc Data2_0_1 1 0 1 NJ 890
+preplace netloc In_Data_Valid_0_1 1 0 8 30 790 NJ 790 NJ 790 NJ 790 1280 760 NJ 760 NJ 760 2560J
+preplace netloc Op_0_1 1 0 9 30 990 NJ 990 NJ 990 NJ 990 NJ 990 NJ 990 NJ 990 2590 990 2890J
+preplace netloc outputStage_0_Data_Out 1 9 1 3300J 850n
+preplace netloc outputStage_0_Out_Data_Valid 1 9 1 NJ 880
+levelinfo -pg 1 0 180 480 790 1100 1460 1870 2310 2740 3130 3320
+pagesize -pg 1 -db -bbox -sgen -140 0 3470 1450
+",
+   "FPU_block_design_ScaleFactor":"0.379564",
+   "FPU_block_design_TopLeft":"-134,-11",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS-threadsafe
+#  -string -flagsOSRD
+preplace port clk -pg 1 -lvl 0 -x 0 -y 480 -defaultsOSRD
+preplace port In_Data_Valid -pg 1 -lvl 0 -x 0 -y 920 -defaultsOSRD
+preplace port Op -pg 1 -lvl 0 -x 0 -y 950 -defaultsOSRD
+preplace port Out_Data_Valid -pg 1 -lvl 10 -x 3320 -y 880 -defaultsOSRD
+preplace portBus Data_1 -pg 1 -lvl 0 -x 0 -y 860 -defaultsOSRD
+preplace portBus Data_2 -pg 1 -lvl 0 -x 0 -y 890 -defaultsOSRD
+preplace portBus Data_Out -pg 1 -lvl 10 -x 3320 -y 850 -defaultsOSRD
+preplace inst inputStage_0 -pg 1 -lvl 1 -x 180 -y 890 -defaultsOSRD
+preplace inst preAdder_0 -pg 1 -lvl 3 -x 790 -y 300 -defaultsOSRD
+preplace inst shiftEquExp_0 -pg 1 -lvl 4 -x 1100 -y 270 -defaultsOSRD
+preplace inst signAdder_0 -pg 1 -lvl 5 -x 1460 -y 190 -defaultsOSRD
+preplace inst addDiffSign_0 -pg 1 -lvl 6 -x 1870 -y 100 -defaultsOSRD
+preplace inst addSameSign_0 -pg 1 -lvl 7 -x 2310 -y 200 -defaultsOSRD
+preplace inst mux_0 -pg 1 -lvl 7 -x 2310 -y 360 -defaultsOSRD
+preplace inst mux_1 -pg 1 -lvl 8 -x 2740 -y 190 -defaultsOSRD
+preplace inst mux_2 -pg 1 -lvl 8 -x 2740 -y 330 -defaultsOSRD
+preplace inst controlUnit_0 -pg 1 -lvl 8 -x 2740 -y 860 -defaultsOSRD
+preplace inst outputStage_0 -pg 1 -lvl 9 -x 3130 -y 870 -defaultsOSRD
+preplace inst multiplier_0 -pg 1 -lvl 2 -x 480 -y 720 -defaultsOSRD
+preplace inst multLeftShift_0 -pg 1 -lvl 5 -x 1460 -y 390 -defaultsOSRD
+preplace inst multRightShift_0 -pg 1 -lvl 5 -x 1460 -y 540 -defaultsOSRD
+preplace inst xlslice_0 -pg 1 -lvl 4 -x 1100 -y 460 -defaultsOSRD
+preplace inst mux_3 -pg 1 -lvl 6 -x 1870 -y 630 -defaultsOSRD
+preplace inst mux_4 -pg 1 -lvl 7 -x 2310 -y 520 -defaultsOSRD
+preplace inst mux_5 -pg 1 -lvl 7 -x 2310 -y 660 -defaultsOSRD
+preplace inst flipFlop_0 -pg 1 -lvl 3 -x 790 -y 490 -defaultsOSRD
+preplace inst xlslice_1 -pg 1 -lvl 4 -x 1100 -y 580 -defaultsOSRD
+preplace inst mux4_1_0 -pg 1 -lvl 8 -x 2740 -y 1110 -defaultsOSRD
+preplace inst multRightShiftUn_0 -pg 1 -lvl 6 -x 1870 -y 900 -defaultsOSRD
+preplace inst flipFlop_1 -pg 1 -lvl 5 -x 1460 -y 840 -defaultsOSRD
+preplace inst checkMultExponent_0 -pg 1 -lvl 7 -x 2310 -y 880 -defaultsOSRD
+preplace inst xlslice_2 -pg 1 -lvl 7 -x 2310 -y 1290 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 7 -x 2310 -y 1060 -defaultsOSRD
+preplace inst mux4_1_1 -pg 1 -lvl 8 -x 2740 -y 1290 -defaultsOSRD
+preplace inst xlconstant_1 -pg 1 -lvl 7 -x 2310 -y 1190 -defaultsOSRD
+preplace inst xlconstant_2 -pg 1 -lvl 7 -x 2310 -y 1390 -defaultsOSRD
+preplace inst xlslice_3 -pg 1 -lvl 8 -x 2740 -y 570 -defaultsOSRD
+preplace inst xlslice_4 -pg 1 -lvl 8 -x 2740 -y 670 -defaultsOSRD
+preplace inst xlslice_5 -pg 1 -lvl 4 -x 1100 -y 680 -defaultsOSRD
+preplace inst orGate_0 -pg 1 -lvl 5 -x 1460 -y 680 -defaultsOSRD
+preplace inst xorGate_0 -pg 1 -lvl 6 -x 1870 -y 300 -defaultsOSRD
+preplace netloc inputStage_0_Data1_reg 1 1 7 320 640 630 700 920J 740 NJ 740 NJ 740 NJ 740 2520J
+preplace netloc inputStage_0_Data2_reg 1 1 7 340 650 640 750 NJ 750 NJ 750 NJ 750 NJ 750 2530J
+preplace netloc preAdder_0_B 1 3 1 N 270
+preplace netloc preAdder_0_Diff_Exp 1 3 1 960 290n
+preplace netloc preAdder_0_sA 1 3 6 960 350 1260 290 1690 440 NJ 440 NJ 440 2960
+preplace netloc preAdder_0_sB 1 3 6 950 360 1280 300 1630 800 2100J 770 2550J 740 2920J
+preplace netloc preAdder_0_A 1 3 2 930 190 1300J
+preplace netloc shiftEquExp_0_Data_Out 1 4 1 1270 220n
+preplace netloc shiftEquExp_0_shift_ready 1 4 3 NJ 280 1700 400 2080J
+preplace netloc signAdder_0_Carry 1 5 4 1630 200 2090 1000 NJ 1000 2960J
+preplace netloc signAdder_0_Add_Out 1 5 2 1710 210 2100J
+preplace netloc preAdder_0_Big_Exp 1 3 4 920 100 NJ 100 1620 220 NJ
+preplace netloc addDiffSign_0_shift_ready 1 6 1 2120 110n
+preplace netloc addSameSign_0_Data_Out 1 7 1 N 190
+preplace netloc addDiffSign_0_Data_Out 1 6 2 NJ 70 2540
+preplace netloc addSameSign_0_New_Exp 1 7 1 2510 210n
+preplace netloc addDiffSign_0_New_Exp 1 6 2 NJ 90 2520
+preplace netloc inputStage_0_In_Check 1 1 7 330J 870 NJ 870 NJ 870 1250J 930 1710J 820 2050J 970 2580
+preplace netloc addDiffSign_0_ans_is_zero 1 6 2 2110 790 2520J
+preplace netloc mux_0_MuxOut 1 7 1 2570 360n
+preplace netloc mux_1_MuxOut 1 8 1 2950 190n
+preplace netloc mux_2_MuxOut 1 8 1 2930 330n
+preplace netloc controlUnit_0_Output_Type 1 8 1 2920 850n
+preplace netloc controlUnit_0_Output_En 1 8 1 2910 870n
+preplace netloc multRightShift_0_shift_ready 1 5 1 1620 560n
+preplace netloc multLeftShift_0_Data_Out 1 5 2 1680 520 NJ
+preplace netloc multRightShift_0_Data_Out 1 5 2 1650 540 NJ
+preplace netloc multLeftShift_0_shift_ready 1 5 1 1640 410n
+preplace netloc multLeftShift_0_New_Exp 1 5 2 NJ 390 2130
+preplace netloc multRightShift_0_New_Exp 1 5 2 1620 550 2100J
+preplace netloc multiplier_0_mult_out 1 2 3 650 710 930 520 1270
+preplace netloc multiplier_0_exp_out 1 2 5 660 720 950 780 1260 920 1640J 790 2060
+preplace netloc flipFlop_0_M_new 1 3 2 950 400 NJ
+preplace netloc flipFlop_0_E_new 1 3 1 960 460n
+preplace netloc xlslice_0_Dout 1 4 1 1260J 420n
+preplace netloc xlslice_1_Dout 1 4 1 1290J 550n
+preplace netloc flipFlop_1_M_new 1 5 1 1660 830n
+preplace netloc flipFlop_1_E_new 1 5 1 1650 850n
+preplace netloc mux_3_MuxOut 1 6 1 2070 630n
+preplace netloc multRightShiftUn_0_Mult_Un_R 1 6 1 2120 890n
+preplace netloc checkMultExponent_0_MFinal 1 7 1 2520 890n
+preplace netloc checkMultExponent_0_Mult_Output_Type 1 7 2 2500 1010 2900J
+preplace netloc multRightShiftUn_0_Mult_Out_Un 1 6 2 2030 1120 2580J
+preplace netloc multRightShiftUn_0_Mult_Exp_Un 1 6 1 2040 880n
+preplace netloc mux_4_MuxOut 1 7 1 2540 520n
+preplace netloc xlconstant_0_dout 1 7 1 2490 1060n
+preplace netloc xlconstant_1_dout 1 7 1 2490J 1190n
+preplace netloc xlslice_2_Dout 1 7 1 NJ 1290
+preplace netloc mux_5_MuxOut 1 7 1 2510 660n
+preplace netloc xlconstant_2_dout 1 7 1 2540J 1330n
+preplace netloc mux4_1_1_MuxOut 1 8 1 2950 890n
+preplace netloc mux4_1_0_MuxOut 1 8 1 2940 870n
+preplace netloc inputStage_0_Data_Out 1 1 8 NJ 880 NJ 880 NJ 880 1240J 940 1670J 980 NJ 980 NJ 980 2930
+preplace netloc xlslice_3_Dout 1 8 1 2940 570n
+preplace netloc xlslice_4_Dout 1 8 1 2910J 670n
+preplace netloc xlslice_5_Dout 1 4 1 NJ 680
+preplace netloc orGate_0_Mult_Shift_Norm_Sel 1 5 2 1700 710 2080
+preplace netloc xorGate_0_AsrFinalSel 1 6 2 2130 280 2570
+preplace netloc clk_0_1 1 0 9 40 480 NJ 480 620 410 940 390 1300 620 1670 810 2130 780 2590 730 N
+preplace netloc Data1_0_1 1 0 1 20J 860n
+preplace netloc Data2_0_1 1 0 1 NJ 890
+preplace netloc In_Data_Valid_0_1 1 0 8 30 790 NJ 790 NJ 790 NJ 790 1280 760 NJ 760 NJ 760 2560J
+preplace netloc Op_0_1 1 0 9 30 990 NJ 990 NJ 990 NJ 990 NJ 990 NJ 990 NJ 990 2590 990 2890J
+preplace netloc outputStage_0_Data_Out 1 9 1 3300J 850n
+preplace netloc outputStage_0_Out_Data_Valid 1 9 1 NJ 880
+levelinfo -pg 1 0 180 480 790 1100 1460 1870 2310 2740 3130 3320
+pagesize -pg 1 -db -bbox -sgen -140 0 3470 1450
+"
+}
+0

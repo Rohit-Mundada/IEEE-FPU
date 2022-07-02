@@ -1,0 +1,1729 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xE3B5C290AF52D1B",
+      "device": "xc7z020clg400-1",
+      "gen_directory": "../../../../fpu_comparch.gen/sources_1/bd/fpu",
+      "name": "fpu",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2020.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "inputStage_0": "",
+      "preAdder_0": "",
+      "shiftEquExp_0": "",
+      "signAdder_0": "",
+      "addDiffSign_0": "",
+      "addSameSign_0": "",
+      "mux_0": "",
+      "mux_1": "",
+      "mux_2": "",
+      "controlUnit_0": "",
+      "outputStage_0": "",
+      "multiplier_0": "",
+      "multLeftShift_0": "",
+      "multRightShift_0": "",
+      "xlslice_0": "",
+      "mux_3": "",
+      "mux_4": "",
+      "mux_5": "",
+      "flipFlop_0": "",
+      "xlslice_1": "",
+      "mux4_1_0": "",
+      "multRightShiftUn_0": "",
+      "flipFlop_1": "",
+      "checkMultExponent_0": "",
+      "xlslice_2": "",
+      "xlconstant_0": "",
+      "mux4_1_1": "",
+      "xlconstant_1": "",
+      "xlconstant_2": "",
+      "xlslice_3": "",
+      "xlslice_4": "",
+      "xlslice_5": "",
+      "orGate_0": "",
+      "xorGate_0": ""
+    },
+    "ports": {
+      "clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "fpu_clk",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
+          }
+        }
+      },
+      "Data_1": {
+        "direction": "I",
+        "left": "31",
+        "right": "0"
+      },
+      "Data_2": {
+        "direction": "I",
+        "left": "31",
+        "right": "0"
+      },
+      "In_Data_Valid": {
+        "direction": "I"
+      },
+      "Op": {
+        "direction": "I"
+      },
+      "Data_Out": {
+        "direction": "O",
+        "left": "31",
+        "right": "0"
+      },
+      "Out_Data_Valid": {
+        "direction": "O"
+      }
+    },
+    "components": {
+      "inputStage_0": {
+        "vlnv": "xilinx.com:module_ref:inputStage:1.0",
+        "xci_name": "fpu_inputStage_0_0",
+        "xci_path": "ip\\fpu_inputStage_0_0\\fpu_inputStage_0_0.xci",
+        "inst_hier_path": "inputStage_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "inputStage",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "fpu_clk",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "Data1": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "Data2": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "In_Data_Valid": {
+            "direction": "I"
+          },
+          "Op": {
+            "direction": "I"
+          },
+          "In_Check": {
+            "direction": "O"
+          },
+          "Data_Out": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "Data1_reg": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "Data2_reg": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "preAdder_0": {
+        "vlnv": "xilinx.com:module_ref:preAdder:1.0",
+        "xci_name": "fpu_preAdder_0_0",
+        "xci_path": "ip\\fpu_preAdder_0_0\\fpu_preAdder_0_0.xci",
+        "inst_hier_path": "preAdder_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "preAdder",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "Data1": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "Data2": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "A": {
+            "direction": "O",
+            "left": "23",
+            "right": "0"
+          },
+          "B": {
+            "direction": "O",
+            "left": "23",
+            "right": "0"
+          },
+          "Big_Exp": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "Diff_Exp": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "sA": {
+            "direction": "O"
+          },
+          "sB": {
+            "direction": "O"
+          }
+        }
+      },
+      "shiftEquExp_0": {
+        "vlnv": "xilinx.com:module_ref:shiftEquExp:1.0",
+        "xci_name": "fpu_shiftEquExp_0_0",
+        "xci_path": "ip\\fpu_shiftEquExp_0_0\\fpu_shiftEquExp_0_0.xci",
+        "inst_hier_path": "shiftEquExp_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "shiftEquExp",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "fpu_clk",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "Data_In": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "shift_amt": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "Data_Out": {
+            "direction": "O",
+            "left": "23",
+            "right": "0"
+          },
+          "shift_ready": {
+            "direction": "O"
+          }
+        }
+      },
+      "signAdder_0": {
+        "vlnv": "xilinx.com:module_ref:signAdder:1.0",
+        "xci_name": "fpu_signAdder_0_0",
+        "xci_path": "ip\\fpu_signAdder_0_0\\fpu_signAdder_0_0.xci",
+        "inst_hier_path": "signAdder_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "signAdder",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "sA": {
+            "direction": "I"
+          },
+          "sB": {
+            "direction": "I"
+          },
+          "A": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "B": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "Add_Out": {
+            "direction": "O",
+            "left": "23",
+            "right": "0"
+          },
+          "Carry": {
+            "direction": "O"
+          }
+        }
+      },
+      "addDiffSign_0": {
+        "vlnv": "xilinx.com:module_ref:addDiffSign:1.0",
+        "xci_name": "fpu_addDiffSign_0_0",
+        "xci_path": "ip\\fpu_addDiffSign_0_0\\fpu_addDiffSign_0_0.xci",
+        "inst_hier_path": "addDiffSign_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "addDiffSign",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "fpu_clk",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "En": {
+            "direction": "I"
+          },
+          "Carry": {
+            "direction": "I"
+          },
+          "Data_In": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "Big_Exp": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "Data_Out": {
+            "direction": "O",
+            "left": "23",
+            "right": "0"
+          },
+          "New_Exp": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "shift_ready": {
+            "direction": "O"
+          },
+          "ans_is_zero": {
+            "direction": "O"
+          }
+        }
+      },
+      "addSameSign_0": {
+        "vlnv": "xilinx.com:module_ref:addSameSign:1.0",
+        "xci_name": "fpu_addSameSign_0_0",
+        "xci_path": "ip\\fpu_addSameSign_0_0\\fpu_addSameSign_0_0.xci",
+        "inst_hier_path": "addSameSign_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "addSameSign",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "Carry": {
+            "direction": "I"
+          },
+          "Data_In": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "Big_Exp": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "Data_Out": {
+            "direction": "O",
+            "left": "23",
+            "right": "0"
+          },
+          "New_Exp": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          }
+        }
+      },
+      "mux_0": {
+        "vlnv": "xilinx.com:module_ref:mux:1.0",
+        "xci_name": "fpu_mux_0_0",
+        "xci_path": "ip\\fpu_mux_0_0\\fpu_mux_0_0.xci",
+        "inst_hier_path": "mux_0",
+        "parameters": {
+          "Width": {
+            "value": "1"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "mux",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "Sel": {
+            "direction": "I"
+          },
+          "In1": {
+            "direction": "I",
+            "left": "0",
+            "right": "0"
+          },
+          "In2": {
+            "direction": "I",
+            "left": "0",
+            "right": "0"
+          },
+          "MuxOut": {
+            "direction": "O",
+            "left": "0",
+            "right": "0"
+          }
+        }
+      },
+      "mux_1": {
+        "vlnv": "xilinx.com:module_ref:mux:1.0",
+        "xci_name": "fpu_mux_1_0",
+        "xci_path": "ip\\fpu_mux_1_0\\fpu_mux_1_0.xci",
+        "inst_hier_path": "mux_1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "mux",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "Sel": {
+            "direction": "I"
+          },
+          "In1": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "In2": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "MuxOut": {
+            "direction": "O",
+            "left": "23",
+            "right": "0"
+          }
+        }
+      },
+      "mux_2": {
+        "vlnv": "xilinx.com:module_ref:mux:1.0",
+        "xci_name": "fpu_mux_2_0",
+        "xci_path": "ip\\fpu_mux_2_0\\fpu_mux_2_0.xci",
+        "inst_hier_path": "mux_2",
+        "parameters": {
+          "Width": {
+            "value": "8"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "mux",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "Sel": {
+            "direction": "I"
+          },
+          "In1": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "In2": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "MuxOut": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          }
+        }
+      },
+      "controlUnit_0": {
+        "vlnv": "xilinx.com:module_ref:controlUnit:1.0",
+        "xci_name": "fpu_controlUnit_0_0",
+        "xci_path": "ip\\fpu_controlUnit_0_0\\fpu_controlUnit_0_0.xci",
+        "inst_hier_path": "controlUnit_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "controlUnit",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "fpu_clk",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "Op": {
+            "direction": "I"
+          },
+          "In_Check": {
+            "direction": "I"
+          },
+          "In_Data_Valid": {
+            "direction": "I"
+          },
+          "Ans_Is_Zero": {
+            "direction": "I"
+          },
+          "ASrFinal": {
+            "direction": "I"
+          },
+          "MFinal": {
+            "direction": "I"
+          },
+          "Output_Type": {
+            "direction": "O",
+            "left": "1",
+            "right": "0"
+          },
+          "Output_En": {
+            "direction": "O"
+          }
+        }
+      },
+      "outputStage_0": {
+        "vlnv": "xilinx.com:module_ref:outputStage:1.0",
+        "xci_name": "fpu_outputStage_0_0",
+        "xci_path": "ip\\fpu_outputStage_0_0\\fpu_outputStage_0_0.xci",
+        "inst_hier_path": "outputStage_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "outputStage",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "fpu_clk",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "sA": {
+            "direction": "I"
+          },
+          "sB": {
+            "direction": "I"
+          },
+          "Old_Exp_A": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "Old_Exp_B": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "Add_Mantissa": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "Add_Exp": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "Mult_Mantissa": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "Mult_Exp": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "Special_Out": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "Op": {
+            "direction": "I"
+          },
+          "Carry": {
+            "direction": "I"
+          },
+          "Output_Type": {
+            "direction": "I",
+            "left": "1",
+            "right": "0"
+          },
+          "Mult_Output_Type": {
+            "direction": "I",
+            "left": "1",
+            "right": "0"
+          },
+          "Output_En": {
+            "direction": "I"
+          },
+          "Data_Out": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "Out_Data_Valid": {
+            "direction": "O"
+          }
+        }
+      },
+      "multiplier_0": {
+        "vlnv": "xilinx.com:module_ref:multiplier:1.0",
+        "xci_name": "fpu_multiplier_0_0",
+        "xci_path": "ip\\fpu_multiplier_0_0\\fpu_multiplier_0_0.xci",
+        "inst_hier_path": "multiplier_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "multiplier",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "Data1": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "Data2": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "mult_out": {
+            "direction": "O",
+            "left": "47",
+            "right": "0"
+          },
+          "exp_out": {
+            "direction": "O",
+            "left": "8",
+            "right": "0"
+          }
+        }
+      },
+      "multLeftShift_0": {
+        "vlnv": "xilinx.com:module_ref:multLeftShift:1.0",
+        "xci_name": "fpu_multLeftShift_0_0",
+        "xci_path": "ip\\fpu_multLeftShift_0_0\\fpu_multLeftShift_0_0.xci",
+        "inst_hier_path": "multLeftShift_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "multLeftShift",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "fpu_clk",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "In_Data_Valid": {
+            "direction": "I"
+          },
+          "Data_In": {
+            "direction": "I",
+            "left": "47",
+            "right": "0"
+          },
+          "Old_Exp": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "Data_Out": {
+            "direction": "O",
+            "left": "23",
+            "right": "0"
+          },
+          "New_Exp": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "shift_ready": {
+            "direction": "O"
+          }
+        }
+      },
+      "multRightShift_0": {
+        "vlnv": "xilinx.com:module_ref:multRightShift:1.0",
+        "xci_name": "fpu_multRightShift_0_0",
+        "xci_path": "ip\\fpu_multRightShift_0_0\\fpu_multRightShift_0_0.xci",
+        "inst_hier_path": "multRightShift_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "multRightShift",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "Data_In": {
+            "direction": "I",
+            "left": "47",
+            "right": "0"
+          },
+          "Old_Exp": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "Data_Out": {
+            "direction": "O",
+            "left": "23",
+            "right": "0"
+          },
+          "New_Exp": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "shift_ready": {
+            "direction": "O"
+          }
+        }
+      },
+      "xlslice_0": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "fpu_xlslice_0_0",
+        "xci_path": "ip\\fpu_xlslice_0_0\\fpu_xlslice_0_0.xci",
+        "inst_hier_path": "xlslice_0",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "7"
+          },
+          "DIN_WIDTH": {
+            "value": "9"
+          },
+          "DOUT_WIDTH": {
+            "value": "8"
+          }
+        }
+      },
+      "mux_3": {
+        "vlnv": "xilinx.com:module_ref:mux:1.0",
+        "xci_name": "fpu_mux_3_0",
+        "xci_path": "ip\\fpu_mux_3_0\\fpu_mux_3_0.xci",
+        "inst_hier_path": "mux_3",
+        "parameters": {
+          "Width": {
+            "value": "1"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "mux",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "Sel": {
+            "direction": "I"
+          },
+          "In1": {
+            "direction": "I",
+            "left": "0",
+            "right": "0"
+          },
+          "In2": {
+            "direction": "I",
+            "left": "0",
+            "right": "0"
+          },
+          "MuxOut": {
+            "direction": "O",
+            "left": "0",
+            "right": "0"
+          }
+        }
+      },
+      "mux_4": {
+        "vlnv": "xilinx.com:module_ref:mux:1.0",
+        "xci_name": "fpu_mux_4_0",
+        "xci_path": "ip\\fpu_mux_4_0\\fpu_mux_4_0.xci",
+        "inst_hier_path": "mux_4",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "mux",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "Sel": {
+            "direction": "I"
+          },
+          "In1": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "In2": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "MuxOut": {
+            "direction": "O",
+            "left": "23",
+            "right": "0"
+          }
+        }
+      },
+      "mux_5": {
+        "vlnv": "xilinx.com:module_ref:mux:1.0",
+        "xci_name": "fpu_mux_5_0",
+        "xci_path": "ip\\fpu_mux_5_0\\fpu_mux_5_0.xci",
+        "inst_hier_path": "mux_5",
+        "parameters": {
+          "Width": {
+            "value": "8"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "mux",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "Sel": {
+            "direction": "I"
+          },
+          "In1": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "In2": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "MuxOut": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          }
+        }
+      },
+      "flipFlop_0": {
+        "vlnv": "xilinx.com:module_ref:flipFlop:1.0",
+        "xci_name": "fpu_flipFlop_0_0",
+        "xci_path": "ip\\fpu_flipFlop_0_0\\fpu_flipFlop_0_0.xci",
+        "inst_hier_path": "flipFlop_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "flipFlop",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "fpu_clk",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "M": {
+            "direction": "I",
+            "left": "47",
+            "right": "0"
+          },
+          "E": {
+            "direction": "I",
+            "left": "8",
+            "right": "0"
+          },
+          "M_new": {
+            "direction": "O",
+            "left": "47",
+            "right": "0"
+          },
+          "E_new": {
+            "direction": "O",
+            "left": "8",
+            "right": "0"
+          }
+        }
+      },
+      "xlslice_1": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "fpu_xlslice_1_0",
+        "xci_path": "ip\\fpu_xlslice_1_0\\fpu_xlslice_1_0.xci",
+        "inst_hier_path": "xlslice_1",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "7"
+          },
+          "DIN_WIDTH": {
+            "value": "9"
+          },
+          "DOUT_WIDTH": {
+            "value": "8"
+          }
+        }
+      },
+      "mux4_1_0": {
+        "vlnv": "xilinx.com:module_ref:mux4_1:1.0",
+        "xci_name": "fpu_mux4_1_0_0",
+        "xci_path": "ip\\fpu_mux4_1_0_0\\fpu_mux4_1_0_0.xci",
+        "inst_hier_path": "mux4_1_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "mux4_1",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "Sel": {
+            "direction": "I",
+            "left": "1",
+            "right": "0"
+          },
+          "In1": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "In2": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "In3": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "In4": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "MuxOut": {
+            "direction": "O",
+            "left": "23",
+            "right": "0"
+          }
+        }
+      },
+      "multRightShiftUn_0": {
+        "vlnv": "xilinx.com:module_ref:multRightShiftUn:1.0",
+        "xci_name": "fpu_multRightShiftUn_0_1",
+        "xci_path": "ip\\fpu_multRightShiftUn_0_1\\fpu_multRightShiftUn_0_1.xci",
+        "inst_hier_path": "multRightShiftUn_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "multRightShiftUn",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "fpu_clk",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "Data_In": {
+            "direction": "I",
+            "left": "47",
+            "right": "0"
+          },
+          "Old_Mult_Exp": {
+            "direction": "I",
+            "left": "8",
+            "right": "0"
+          },
+          "Mult_Exp_Un": {
+            "direction": "O",
+            "left": "8",
+            "right": "0"
+          },
+          "Mult_Out_Un": {
+            "direction": "O",
+            "left": "23",
+            "right": "0"
+          },
+          "Mult_Un_R": {
+            "direction": "O"
+          }
+        }
+      },
+      "flipFlop_1": {
+        "vlnv": "xilinx.com:module_ref:flipFlop:1.0",
+        "xci_name": "fpu_flipFlop_1_0",
+        "xci_path": "ip\\fpu_flipFlop_1_0\\fpu_flipFlop_1_0.xci",
+        "inst_hier_path": "flipFlop_1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "flipFlop",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "fpu_clk",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "M": {
+            "direction": "I",
+            "left": "47",
+            "right": "0"
+          },
+          "E": {
+            "direction": "I",
+            "left": "8",
+            "right": "0"
+          },
+          "M_new": {
+            "direction": "O",
+            "left": "47",
+            "right": "0"
+          },
+          "E_new": {
+            "direction": "O",
+            "left": "8",
+            "right": "0"
+          }
+        }
+      },
+      "checkMultExponent_0": {
+        "vlnv": "xilinx.com:module_ref:checkMultExponent:1.0",
+        "xci_name": "fpu_checkMultExponent_0_0",
+        "xci_path": "ip\\fpu_checkMultExponent_0_0\\fpu_checkMultExponent_0_0.xci",
+        "inst_hier_path": "checkMultExponent_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "checkMultExponent",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "fpu_clk",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "Old_Mult_Exp": {
+            "direction": "I",
+            "left": "8",
+            "right": "0"
+          },
+          "Mult_Un_R": {
+            "direction": "I"
+          },
+          "Mult_Norm_R": {
+            "direction": "I"
+          },
+          "Mult_Output_Type": {
+            "direction": "O",
+            "left": "1",
+            "right": "0"
+          },
+          "MFinal": {
+            "direction": "O"
+          }
+        }
+      },
+      "xlslice_2": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "fpu_xlslice_2_0",
+        "xci_path": "ip\\fpu_xlslice_2_0\\fpu_xlslice_2_0.xci",
+        "inst_hier_path": "xlslice_2",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "7"
+          },
+          "DIN_WIDTH": {
+            "value": "9"
+          },
+          "DOUT_WIDTH": {
+            "value": "8"
+          }
+        }
+      },
+      "xlconstant_0": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "xci_name": "fpu_xlconstant_0_0",
+        "xci_path": "ip\\fpu_xlconstant_0_0\\fpu_xlconstant_0_0.xci",
+        "inst_hier_path": "xlconstant_0",
+        "parameters": {
+          "CONST_VAL": {
+            "value": "0"
+          },
+          "CONST_WIDTH": {
+            "value": "24"
+          }
+        }
+      },
+      "mux4_1_1": {
+        "vlnv": "xilinx.com:module_ref:mux4_1:1.0",
+        "xci_name": "fpu_mux4_1_1_0",
+        "xci_path": "ip\\fpu_mux4_1_1_0\\fpu_mux4_1_1_0.xci",
+        "inst_hier_path": "mux4_1_1",
+        "parameters": {
+          "Width": {
+            "value": "8"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "mux4_1",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "Sel": {
+            "direction": "I",
+            "left": "1",
+            "right": "0"
+          },
+          "In1": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "In2": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "In3": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "In4": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "MuxOut": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          }
+        }
+      },
+      "xlconstant_1": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "xci_name": "fpu_xlconstant_1_0",
+        "xci_path": "ip\\fpu_xlconstant_1_0\\fpu_xlconstant_1_0.xci",
+        "inst_hier_path": "xlconstant_1",
+        "parameters": {
+          "CONST_VAL": {
+            "value": "0"
+          },
+          "CONST_WIDTH": {
+            "value": "8"
+          }
+        }
+      },
+      "xlconstant_2": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "xci_name": "fpu_xlconstant_2_0",
+        "xci_path": "ip\\fpu_xlconstant_2_0\\fpu_xlconstant_2_0.xci",
+        "inst_hier_path": "xlconstant_2",
+        "parameters": {
+          "CONST_VAL": {
+            "value": "255"
+          },
+          "CONST_WIDTH": {
+            "value": "8"
+          }
+        }
+      },
+      "xlslice_3": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "fpu_xlslice_3_0",
+        "xci_path": "ip\\fpu_xlslice_3_0\\fpu_xlslice_3_0.xci",
+        "inst_hier_path": "xlslice_3",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "30"
+          },
+          "DIN_TO": {
+            "value": "23"
+          },
+          "DOUT_WIDTH": {
+            "value": "8"
+          }
+        }
+      },
+      "xlslice_4": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "fpu_xlslice_3_1",
+        "xci_path": "ip\\fpu_xlslice_3_1\\fpu_xlslice_3_1.xci",
+        "inst_hier_path": "xlslice_4",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "30"
+          },
+          "DIN_TO": {
+            "value": "23"
+          },
+          "DOUT_WIDTH": {
+            "value": "8"
+          }
+        }
+      },
+      "xlslice_5": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "fpu_xlslice_5_0",
+        "xci_path": "ip\\fpu_xlslice_5_0\\fpu_xlslice_5_0.xci",
+        "inst_hier_path": "xlslice_5",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "47"
+          },
+          "DIN_TO": {
+            "value": "46"
+          },
+          "DIN_WIDTH": {
+            "value": "48"
+          },
+          "DOUT_WIDTH": {
+            "value": "2"
+          }
+        }
+      },
+      "orGate_0": {
+        "vlnv": "xilinx.com:module_ref:orGate:1.0",
+        "xci_name": "fpu_orGate_0_0",
+        "xci_path": "ip\\fpu_orGate_0_0\\fpu_orGate_0_0.xci",
+        "inst_hier_path": "orGate_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "orGate",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "MultUpIn": {
+            "direction": "I",
+            "left": "1",
+            "right": "0"
+          },
+          "Mult_Shift_Norm_Sel": {
+            "direction": "O"
+          }
+        }
+      },
+      "xorGate_0": {
+        "vlnv": "xilinx.com:module_ref:xorGate:1.0",
+        "xci_name": "fpu_xorGate_0_0",
+        "xci_path": "ip\\fpu_xorGate_0_0\\fpu_xorGate_0_0.xci",
+        "inst_hier_path": "xorGate_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "xorGate",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "sA": {
+            "direction": "I"
+          },
+          "sB": {
+            "direction": "I"
+          },
+          "AsrFinalSel": {
+            "direction": "O"
+          }
+        }
+      }
+    },
+    "nets": {
+      "inputStage_0_Data1_reg": {
+        "ports": [
+          "inputStage_0/Data1_reg",
+          "preAdder_0/Data1",
+          "multiplier_0/Data1",
+          "xlslice_3/Din"
+        ]
+      },
+      "inputStage_0_Data2_reg": {
+        "ports": [
+          "inputStage_0/Data2_reg",
+          "preAdder_0/Data2",
+          "multiplier_0/Data2",
+          "xlslice_4/Din"
+        ]
+      },
+      "preAdder_0_B": {
+        "ports": [
+          "preAdder_0/B",
+          "shiftEquExp_0/Data_In"
+        ]
+      },
+      "preAdder_0_Diff_Exp": {
+        "ports": [
+          "preAdder_0/Diff_Exp",
+          "shiftEquExp_0/shift_amt"
+        ]
+      },
+      "preAdder_0_sA": {
+        "ports": [
+          "preAdder_0/sA",
+          "signAdder_0/sA",
+          "outputStage_0/sA",
+          "xorGate_0/sA"
+        ]
+      },
+      "preAdder_0_sB": {
+        "ports": [
+          "preAdder_0/sB",
+          "signAdder_0/sB",
+          "outputStage_0/sB",
+          "xorGate_0/sB"
+        ]
+      },
+      "preAdder_0_A": {
+        "ports": [
+          "preAdder_0/A",
+          "signAdder_0/A"
+        ]
+      },
+      "shiftEquExp_0_Data_Out": {
+        "ports": [
+          "shiftEquExp_0/Data_Out",
+          "signAdder_0/B"
+        ]
+      },
+      "shiftEquExp_0_shift_ready": {
+        "ports": [
+          "shiftEquExp_0/shift_ready",
+          "addDiffSign_0/En",
+          "mux_0/In1"
+        ]
+      },
+      "signAdder_0_Carry": {
+        "ports": [
+          "signAdder_0/Carry",
+          "addDiffSign_0/Carry",
+          "addSameSign_0/Carry",
+          "outputStage_0/Carry"
+        ]
+      },
+      "signAdder_0_Add_Out": {
+        "ports": [
+          "signAdder_0/Add_Out",
+          "addDiffSign_0/Data_In",
+          "addSameSign_0/Data_In"
+        ]
+      },
+      "preAdder_0_Big_Exp": {
+        "ports": [
+          "preAdder_0/Big_Exp",
+          "addDiffSign_0/Big_Exp",
+          "addSameSign_0/Big_Exp"
+        ]
+      },
+      "addDiffSign_0_shift_ready": {
+        "ports": [
+          "addDiffSign_0/shift_ready",
+          "mux_0/In2"
+        ]
+      },
+      "addSameSign_0_Data_Out": {
+        "ports": [
+          "addSameSign_0/Data_Out",
+          "mux_1/In1"
+        ]
+      },
+      "addDiffSign_0_Data_Out": {
+        "ports": [
+          "addDiffSign_0/Data_Out",
+          "mux_1/In2"
+        ]
+      },
+      "addSameSign_0_New_Exp": {
+        "ports": [
+          "addSameSign_0/New_Exp",
+          "mux_2/In1"
+        ]
+      },
+      "addDiffSign_0_New_Exp": {
+        "ports": [
+          "addDiffSign_0/New_Exp",
+          "mux_2/In2"
+        ]
+      },
+      "inputStage_0_In_Check": {
+        "ports": [
+          "inputStage_0/In_Check",
+          "controlUnit_0/In_Check"
+        ]
+      },
+      "addDiffSign_0_ans_is_zero": {
+        "ports": [
+          "addDiffSign_0/ans_is_zero",
+          "controlUnit_0/Ans_Is_Zero"
+        ]
+      },
+      "mux_0_MuxOut": {
+        "ports": [
+          "mux_0/MuxOut",
+          "controlUnit_0/ASrFinal"
+        ]
+      },
+      "mux_1_MuxOut": {
+        "ports": [
+          "mux_1/MuxOut",
+          "outputStage_0/Add_Mantissa"
+        ]
+      },
+      "mux_2_MuxOut": {
+        "ports": [
+          "mux_2/MuxOut",
+          "outputStage_0/Add_Exp"
+        ]
+      },
+      "controlUnit_0_Output_Type": {
+        "ports": [
+          "controlUnit_0/Output_Type",
+          "outputStage_0/Output_Type"
+        ]
+      },
+      "controlUnit_0_Output_En": {
+        "ports": [
+          "controlUnit_0/Output_En",
+          "outputStage_0/Output_En"
+        ]
+      },
+      "multRightShift_0_shift_ready": {
+        "ports": [
+          "multRightShift_0/shift_ready",
+          "mux_3/In2"
+        ]
+      },
+      "multLeftShift_0_Data_Out": {
+        "ports": [
+          "multLeftShift_0/Data_Out",
+          "mux_4/In1"
+        ]
+      },
+      "multRightShift_0_Data_Out": {
+        "ports": [
+          "multRightShift_0/Data_Out",
+          "mux_4/In2"
+        ]
+      },
+      "multLeftShift_0_shift_ready": {
+        "ports": [
+          "multLeftShift_0/shift_ready",
+          "mux_3/In1"
+        ]
+      },
+      "multLeftShift_0_New_Exp": {
+        "ports": [
+          "multLeftShift_0/New_Exp",
+          "mux_5/In1"
+        ]
+      },
+      "multRightShift_0_New_Exp": {
+        "ports": [
+          "multRightShift_0/New_Exp",
+          "mux_5/In2"
+        ]
+      },
+      "multiplier_0_mult_out": {
+        "ports": [
+          "multiplier_0/mult_out",
+          "flipFlop_0/M",
+          "multRightShift_0/Data_In",
+          "flipFlop_1/M",
+          "xlslice_5/Din"
+        ]
+      },
+      "multiplier_0_exp_out": {
+        "ports": [
+          "multiplier_0/exp_out",
+          "flipFlop_0/E",
+          "xlslice_1/Din",
+          "flipFlop_1/E",
+          "checkMultExponent_0/Old_Mult_Exp"
+        ]
+      },
+      "flipFlop_0_M_new": {
+        "ports": [
+          "flipFlop_0/M_new",
+          "multLeftShift_0/Data_In"
+        ]
+      },
+      "flipFlop_0_E_new": {
+        "ports": [
+          "flipFlop_0/E_new",
+          "xlslice_0/Din"
+        ]
+      },
+      "xlslice_0_Dout": {
+        "ports": [
+          "xlslice_0/Dout",
+          "multLeftShift_0/Old_Exp"
+        ]
+      },
+      "xlslice_1_Dout": {
+        "ports": [
+          "xlslice_1/Dout",
+          "multRightShift_0/Old_Exp"
+        ]
+      },
+      "flipFlop_1_M_new": {
+        "ports": [
+          "flipFlop_1/M_new",
+          "multRightShiftUn_0/Data_In"
+        ]
+      },
+      "flipFlop_1_E_new": {
+        "ports": [
+          "flipFlop_1/E_new",
+          "multRightShiftUn_0/Old_Mult_Exp"
+        ]
+      },
+      "mux_3_MuxOut": {
+        "ports": [
+          "mux_3/MuxOut",
+          "checkMultExponent_0/Mult_Norm_R"
+        ]
+      },
+      "multRightShiftUn_0_Mult_Un_R": {
+        "ports": [
+          "multRightShiftUn_0/Mult_Un_R",
+          "checkMultExponent_0/Mult_Un_R"
+        ]
+      },
+      "checkMultExponent_0_MFinal": {
+        "ports": [
+          "checkMultExponent_0/MFinal",
+          "controlUnit_0/MFinal"
+        ]
+      },
+      "checkMultExponent_0_Mult_Output_Type": {
+        "ports": [
+          "checkMultExponent_0/Mult_Output_Type",
+          "mux4_1_0/Sel",
+          "outputStage_0/Mult_Output_Type",
+          "mux4_1_1/Sel"
+        ]
+      },
+      "multRightShiftUn_0_Mult_Out_Un": {
+        "ports": [
+          "multRightShiftUn_0/Mult_Out_Un",
+          "mux4_1_0/In2"
+        ]
+      },
+      "multRightShiftUn_0_Mult_Exp_Un": {
+        "ports": [
+          "multRightShiftUn_0/Mult_Exp_Un",
+          "xlslice_2/Din"
+        ]
+      },
+      "mux_4_MuxOut": {
+        "ports": [
+          "mux_4/MuxOut",
+          "mux4_1_0/In3"
+        ]
+      },
+      "xlconstant_0_dout": {
+        "ports": [
+          "xlconstant_0/dout",
+          "mux4_1_0/In1",
+          "mux4_1_0/In4"
+        ]
+      },
+      "xlconstant_1_dout": {
+        "ports": [
+          "xlconstant_1/dout",
+          "mux4_1_1/In1"
+        ]
+      },
+      "xlslice_2_Dout": {
+        "ports": [
+          "xlslice_2/Dout",
+          "mux4_1_1/In2"
+        ]
+      },
+      "mux_5_MuxOut": {
+        "ports": [
+          "mux_5/MuxOut",
+          "mux4_1_1/In3"
+        ]
+      },
+      "xlconstant_2_dout": {
+        "ports": [
+          "xlconstant_2/dout",
+          "mux4_1_1/In4"
+        ]
+      },
+      "mux4_1_1_MuxOut": {
+        "ports": [
+          "mux4_1_1/MuxOut",
+          "outputStage_0/Mult_Exp"
+        ]
+      },
+      "mux4_1_0_MuxOut": {
+        "ports": [
+          "mux4_1_0/MuxOut",
+          "outputStage_0/Mult_Mantissa"
+        ]
+      },
+      "inputStage_0_Data_Out": {
+        "ports": [
+          "inputStage_0/Data_Out",
+          "outputStage_0/Special_Out"
+        ]
+      },
+      "xlslice_3_Dout": {
+        "ports": [
+          "xlslice_3/Dout",
+          "outputStage_0/Old_Exp_A"
+        ]
+      },
+      "xlslice_4_Dout": {
+        "ports": [
+          "xlslice_4/Dout",
+          "outputStage_0/Old_Exp_B"
+        ]
+      },
+      "xlslice_5_Dout": {
+        "ports": [
+          "xlslice_5/Dout",
+          "orGate_0/MultUpIn"
+        ]
+      },
+      "orGate_0_Mult_Shift_Norm_Sel": {
+        "ports": [
+          "orGate_0/Mult_Shift_Norm_Sel",
+          "mux_3/Sel",
+          "mux_4/Sel",
+          "mux_5/Sel"
+        ]
+      },
+      "xorGate_0_AsrFinalSel": {
+        "ports": [
+          "xorGate_0/AsrFinalSel",
+          "mux_1/Sel",
+          "mux_2/Sel",
+          "mux_0/Sel"
+        ]
+      },
+      "clk_0_1": {
+        "ports": [
+          "clk",
+          "inputStage_0/clk",
+          "flipFlop_0/clk",
+          "flipFlop_1/clk",
+          "multRightShiftUn_0/clk",
+          "multLeftShift_0/clk",
+          "checkMultExponent_0/clk",
+          "controlUnit_0/clk",
+          "outputStage_0/clk",
+          "shiftEquExp_0/clk",
+          "addDiffSign_0/clk"
+        ]
+      },
+      "Data1_0_1": {
+        "ports": [
+          "Data_1",
+          "inputStage_0/Data1"
+        ]
+      },
+      "Data2_0_1": {
+        "ports": [
+          "Data_2",
+          "inputStage_0/Data2"
+        ]
+      },
+      "In_Data_Valid_0_1": {
+        "ports": [
+          "In_Data_Valid",
+          "inputStage_0/In_Data_Valid",
+          "controlUnit_0/In_Data_Valid",
+          "multLeftShift_0/In_Data_Valid"
+        ]
+      },
+      "Op_0_1": {
+        "ports": [
+          "Op",
+          "inputStage_0/Op",
+          "outputStage_0/Op",
+          "controlUnit_0/Op"
+        ]
+      },
+      "outputStage_0_Data_Out": {
+        "ports": [
+          "outputStage_0/Data_Out",
+          "Data_Out"
+        ]
+      },
+      "outputStage_0_Out_Data_Valid": {
+        "ports": [
+          "outputStage_0/Out_Data_Valid",
+          "Out_Data_Valid"
+        ]
+      }
+    }
+  }
+}

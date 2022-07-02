@@ -1,0 +1,434 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Mar  7 11:16:18 2022
+# Process ID: 47088
+# Current directory: D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.runs/synth_1
+# Command line: vivado.exe -log fpu_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source fpu_wrapper.tcl
+# Log file: D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.runs/synth_1/fpu_wrapper.vds
+# Journal file: D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source fpu_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+add_files: Time (s): cpu = 00:00:03 ; elapsed = 00:00:32 . Memory (MB): peak = 999.738 ; gain = 0.000
+Command: synth_design -top fpu_wrapper -part xc7z020clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 17964
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 999.738 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'fpu_wrapper' [d:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.gen/sources_1/bd/fpu/hdl/fpu_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'fpu' [d:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.gen/sources_1/bd/fpu/synth/fpu.v:13]
+INFO: [Synth 8-6157] synthesizing module 'fpu_addDiffSign_0_0' [D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.runs/synth_1/.Xil/Vivado-47088-Rohit-Notebook/realtime/fpu_addDiffSign_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fpu_addDiffSign_0_0' (1#1) [D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.runs/synth_1/.Xil/Vivado-47088-Rohit-Notebook/realtime/fpu_addDiffSign_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'fpu_addSameSign_0_0' [D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.runs/synth_1/.Xil/Vivado-47088-Rohit-Notebook/realtime/fpu_addSameSign_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fpu_addSameSign_0_0' (2#1) [D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.runs/synth_1/.Xil/Vivado-47088-Rohit-Notebook/realtime/fpu_addSameSign_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'fpu_checkMultExponent_0_0' [D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.runs/synth_1/.Xil/Vivado-47088-Rohit-Notebook/realtime/fpu_checkMultExponent_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fpu_checkMultExponent_0_0' (3#1) [D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.runs/synth_1/.Xil/Vivado-47088-Rohit-Notebook/realtime/fpu_checkMultExponent_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'fpu_controlUnit_0_0' [D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.runs/synth_1/.Xil/Vivado-47088-Rohit-Notebook/realtime/fpu_controlUnit_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fpu_controlUnit_0_0' (4#1) [D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.runs/synth_1/.Xil/Vivado-47088-Rohit-Notebook/realtime/fpu_controlUnit_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'fpu_flipFlop_0_0' [D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.runs/synth_1/.Xil/Vivado-47088-Rohit-Notebook/realtime/fpu_flipFlop_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fpu_flipFlop_0_0' (5#1) [D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.runs/synth_1/.Xil/Vivado-47088-Rohit-Notebook/realtime/fpu_flipFlop_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'fpu_flipFlop_1_0' [D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.runs/synth_1/.Xil/Vivado-47088-Rohit-Notebook/realtime/fpu_flipFlop_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fpu_flipFlop_1_0' (6#1) [D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.runs/synth_1/.Xil/Vivado-47088-Rohit-Notebook/realtime/fpu_flipFlop_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'fpu_inputStage_0_0' [D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.runs/synth_1/.Xil/Vivado-47088-Rohit-Notebook/realtime/fpu_inputStage_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fpu_inputStage_0_0' (7#1) [D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.runs/synth_1/.Xil/Vivado-47088-Rohit-Notebook/realtime/fpu_inputStage_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'fpu_multLeftShift_0_0' [D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.runs/synth_1/.Xil/Vivado-47088-Rohit-Notebook/realtime/fpu_multLeftShift_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fpu_multLeftShift_0_0' (8#1) [D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.runs/synth_1/.Xil/Vivado-47088-Rohit-Notebook/realtime/fpu_multLeftShift_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'fpu_multRightShiftUn_0_1' [D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.runs/synth_1/.Xil/Vivado-47088-Rohit-Notebook/realtime/fpu_multRightShiftUn_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fpu_multRightShiftUn_0_1' (9#1) [D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.runs/synth_1/.Xil/Vivado-47088-Rohit-Notebook/realtime/fpu_multRightShiftUn_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'fpu_multRightShift_0_0' [D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.runs/synth_1/.Xil/Vivado-47088-Rohit-Notebook/realtime/fpu_multRightShift_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fpu_multRightShift_0_0' (10#1) [D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.runs/synth_1/.Xil/Vivado-47088-Rohit-Notebook/realtime/fpu_multRightShift_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'fpu_multiplier_0_0' [D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.runs/synth_1/.Xil/Vivado-47088-Rohit-Notebook/realtime/fpu_multiplier_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fpu_multiplier_0_0' (11#1) [D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.runs/synth_1/.Xil/Vivado-47088-Rohit-Notebook/realtime/fpu_multiplier_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'fpu_mux4_1_0_0' [D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.runs/synth_1/.Xil/Vivado-47088-Rohit-Notebook/realtime/fpu_mux4_1_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fpu_mux4_1_0_0' (12#1) [D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.runs/synth_1/.Xil/Vivado-47088-Rohit-Notebook/realtime/fpu_mux4_1_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'fpu_mux4_1_1_0' [D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.runs/synth_1/.Xil/Vivado-47088-Rohit-Notebook/realtime/fpu_mux4_1_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fpu_mux4_1_1_0' (13#1) [D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.runs/synth_1/.Xil/Vivado-47088-Rohit-Notebook/realtime/fpu_mux4_1_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'fpu_mux_0_0' [D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.runs/synth_1/.Xil/Vivado-47088-Rohit-Notebook/realtime/fpu_mux_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fpu_mux_0_0' (14#1) [D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.runs/synth_1/.Xil/Vivado-47088-Rohit-Notebook/realtime/fpu_mux_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'fpu_mux_1_0' [D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.runs/synth_1/.Xil/Vivado-47088-Rohit-Notebook/realtime/fpu_mux_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fpu_mux_1_0' (15#1) [D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.runs/synth_1/.Xil/Vivado-47088-Rohit-Notebook/realtime/fpu_mux_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'fpu_mux_2_0' [D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.runs/synth_1/.Xil/Vivado-47088-Rohit-Notebook/realtime/fpu_mux_2_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fpu_mux_2_0' (16#1) [D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.runs/synth_1/.Xil/Vivado-47088-Rohit-Notebook/realtime/fpu_mux_2_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'fpu_mux_3_0' [D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.runs/synth_1/.Xil/Vivado-47088-Rohit-Notebook/realtime/fpu_mux_3_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fpu_mux_3_0' (17#1) [D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.runs/synth_1/.Xil/Vivado-47088-Rohit-Notebook/realtime/fpu_mux_3_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'fpu_mux_4_0' [D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.runs/synth_1/.Xil/Vivado-47088-Rohit-Notebook/realtime/fpu_mux_4_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fpu_mux_4_0' (18#1) [D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.runs/synth_1/.Xil/Vivado-47088-Rohit-Notebook/realtime/fpu_mux_4_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'fpu_mux_5_0' [D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.runs/synth_1/.Xil/Vivado-47088-Rohit-Notebook/realtime/fpu_mux_5_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fpu_mux_5_0' (19#1) [D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.runs/synth_1/.Xil/Vivado-47088-Rohit-Notebook/realtime/fpu_mux_5_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'fpu_orGate_0_0' [D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.runs/synth_1/.Xil/Vivado-47088-Rohit-Notebook/realtime/fpu_orGate_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fpu_orGate_0_0' (20#1) [D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.runs/synth_1/.Xil/Vivado-47088-Rohit-Notebook/realtime/fpu_orGate_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'fpu_outputStage_0_0' [D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.runs/synth_1/.Xil/Vivado-47088-Rohit-Notebook/realtime/fpu_outputStage_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fpu_outputStage_0_0' (21#1) [D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.runs/synth_1/.Xil/Vivado-47088-Rohit-Notebook/realtime/fpu_outputStage_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'fpu_preAdder_0_0' [D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.runs/synth_1/.Xil/Vivado-47088-Rohit-Notebook/realtime/fpu_preAdder_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fpu_preAdder_0_0' (22#1) [D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.runs/synth_1/.Xil/Vivado-47088-Rohit-Notebook/realtime/fpu_preAdder_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'fpu_shiftEquExp_0_0' [D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.runs/synth_1/.Xil/Vivado-47088-Rohit-Notebook/realtime/fpu_shiftEquExp_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fpu_shiftEquExp_0_0' (23#1) [D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.runs/synth_1/.Xil/Vivado-47088-Rohit-Notebook/realtime/fpu_shiftEquExp_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'fpu_signAdder_0_0' [D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.runs/synth_1/.Xil/Vivado-47088-Rohit-Notebook/realtime/fpu_signAdder_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fpu_signAdder_0_0' (24#1) [D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.runs/synth_1/.Xil/Vivado-47088-Rohit-Notebook/realtime/fpu_signAdder_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'fpu_xlconstant_0_0' [d:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.gen/sources_1/bd/fpu/ip/fpu_xlconstant_0_0/synth/fpu_xlconstant_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant' [d:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.gen/sources_1/bd/fpu/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+	Parameter CONST_VAL bound to: 24'b000000000000000000000000 
+	Parameter CONST_WIDTH bound to: 24 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant' (25#1) [d:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.gen/sources_1/bd/fpu/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'fpu_xlconstant_0_0' (26#1) [d:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.gen/sources_1/bd/fpu/ip/fpu_xlconstant_0_0/synth/fpu_xlconstant_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'fpu_xlconstant_1_0' [d:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.gen/sources_1/bd/fpu/ip/fpu_xlconstant_1_0/synth/fpu_xlconstant_1_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant__parameterized0' [d:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.gen/sources_1/bd/fpu/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+	Parameter CONST_VAL bound to: 8'b00000000 
+	Parameter CONST_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant__parameterized0' (26#1) [d:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.gen/sources_1/bd/fpu/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'fpu_xlconstant_1_0' (27#1) [d:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.gen/sources_1/bd/fpu/ip/fpu_xlconstant_1_0/synth/fpu_xlconstant_1_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'fpu_xlconstant_2_0' [d:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.gen/sources_1/bd/fpu/ip/fpu_xlconstant_2_0/synth/fpu_xlconstant_2_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant__parameterized1' [d:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.gen/sources_1/bd/fpu/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+	Parameter CONST_VAL bound to: 8'b11111111 
+	Parameter CONST_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant__parameterized1' (27#1) [d:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.gen/sources_1/bd/fpu/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'fpu_xlconstant_2_0' (28#1) [d:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.gen/sources_1/bd/fpu/ip/fpu_xlconstant_2_0/synth/fpu_xlconstant_2_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'fpu_xlslice_0_0' [d:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.gen/sources_1/bd/fpu/ip/fpu_xlslice_0_0/synth/fpu_xlslice_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice' [d:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.gen/sources_1/bd/fpu/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 9 - type: integer 
+	Parameter DIN_FROM bound to: 7 - type: integer 
+	Parameter DIN_TO bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice' (29#1) [d:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.gen/sources_1/bd/fpu/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'fpu_xlslice_0_0' (30#1) [d:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.gen/sources_1/bd/fpu/ip/fpu_xlslice_0_0/synth/fpu_xlslice_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'fpu_xlslice_1_0' [d:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.gen/sources_1/bd/fpu/ip/fpu_xlslice_1_0/synth/fpu_xlslice_1_0.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'fpu_xlslice_1_0' (31#1) [d:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.gen/sources_1/bd/fpu/ip/fpu_xlslice_1_0/synth/fpu_xlslice_1_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'fpu_xlslice_2_0' [d:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.gen/sources_1/bd/fpu/ip/fpu_xlslice_2_0/synth/fpu_xlslice_2_0.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'fpu_xlslice_2_0' (32#1) [d:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.gen/sources_1/bd/fpu/ip/fpu_xlslice_2_0/synth/fpu_xlslice_2_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'fpu_xlslice_3_0' [d:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.gen/sources_1/bd/fpu/ip/fpu_xlslice_3_0/synth/fpu_xlslice_3_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized0' [d:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.gen/sources_1/bd/fpu/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 32 - type: integer 
+	Parameter DIN_FROM bound to: 30 - type: integer 
+	Parameter DIN_TO bound to: 23 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized0' (32#1) [d:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.gen/sources_1/bd/fpu/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'fpu_xlslice_3_0' (33#1) [d:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.gen/sources_1/bd/fpu/ip/fpu_xlslice_3_0/synth/fpu_xlslice_3_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'fpu_xlslice_3_1' [d:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.gen/sources_1/bd/fpu/ip/fpu_xlslice_3_1/synth/fpu_xlslice_3_1.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'fpu_xlslice_3_1' (34#1) [d:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.gen/sources_1/bd/fpu/ip/fpu_xlslice_3_1/synth/fpu_xlslice_3_1.v:57]
+INFO: [Synth 8-6157] synthesizing module 'fpu_xlslice_5_0' [d:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.gen/sources_1/bd/fpu/ip/fpu_xlslice_5_0/synth/fpu_xlslice_5_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized1' [d:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.gen/sources_1/bd/fpu/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 48 - type: integer 
+	Parameter DIN_FROM bound to: 47 - type: integer 
+	Parameter DIN_TO bound to: 46 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized1' (34#1) [d:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.gen/sources_1/bd/fpu/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'fpu_xlslice_5_0' (35#1) [d:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.gen/sources_1/bd/fpu/ip/fpu_xlslice_5_0/synth/fpu_xlslice_5_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'fpu_xorGate_0_0' [D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.runs/synth_1/.Xil/Vivado-47088-Rohit-Notebook/realtime/fpu_xorGate_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fpu_xorGate_0_0' (36#1) [D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.runs/synth_1/.Xil/Vivado-47088-Rohit-Notebook/realtime/fpu_xorGate_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fpu' (37#1) [d:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.gen/sources_1/bd/fpu/synth/fpu.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'fpu_wrapper' (38#1) [d:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.gen/sources_1/bd/fpu/hdl/fpu_wrapper.v:12]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 999.738 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 999.738 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 999.738 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 999.738 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.gen/sources_1/bd/fpu/ip/fpu_inputStage_0_0/fpu_inputStage_0_0/fpu_inputStage_0_0_in_context.xdc] for cell 'fpu_i/inputStage_0'
+Finished Parsing XDC File [d:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.gen/sources_1/bd/fpu/ip/fpu_inputStage_0_0/fpu_inputStage_0_0/fpu_inputStage_0_0_in_context.xdc] for cell 'fpu_i/inputStage_0'
+Parsing XDC File [d:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.gen/sources_1/bd/fpu/ip/fpu_preAdder_0_0/fpu_preAdder_0_0/fpu_preAdder_0_0_in_context.xdc] for cell 'fpu_i/preAdder_0'
+Finished Parsing XDC File [d:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.gen/sources_1/bd/fpu/ip/fpu_preAdder_0_0/fpu_preAdder_0_0/fpu_preAdder_0_0_in_context.xdc] for cell 'fpu_i/preAdder_0'
+Parsing XDC File [d:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.gen/sources_1/bd/fpu/ip/fpu_shiftEquExp_0_0/fpu_shiftEquExp_0_0/fpu_shiftEquExp_0_0_in_context.xdc] for cell 'fpu_i/shiftEquExp_0'
+Finished Parsing XDC File [d:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.gen/sources_1/bd/fpu/ip/fpu_shiftEquExp_0_0/fpu_shiftEquExp_0_0/fpu_shiftEquExp_0_0_in_context.xdc] for cell 'fpu_i/shiftEquExp_0'
+Parsing XDC File [d:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.gen/sources_1/bd/fpu/ip/fpu_signAdder_0_0/fpu_signAdder_0_0/fpu_signAdder_0_0_in_context.xdc] for cell 'fpu_i/signAdder_0'
+Finished Parsing XDC File [d:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.gen/sources_1/bd/fpu/ip/fpu_signAdder_0_0/fpu_signAdder_0_0/fpu_signAdder_0_0_in_context.xdc] for cell 'fpu_i/signAdder_0'
+Parsing XDC File [d:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.gen/sources_1/bd/fpu/ip/fpu_addDiffSign_0_0/fpu_addDiffSign_0_0/fpu_addDiffSign_0_0_in_context.xdc] for cell 'fpu_i/addDiffSign_0'
+Finished Parsing XDC File [d:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.gen/sources_1/bd/fpu/ip/fpu_addDiffSign_0_0/fpu_addDiffSign_0_0/fpu_addDiffSign_0_0_in_context.xdc] for cell 'fpu_i/addDiffSign_0'
+Parsing XDC File [d:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.gen/sources_1/bd/fpu/ip/fpu_addSameSign_0_0/fpu_addSameSign_0_0/fpu_addSameSign_0_0_in_context.xdc] for cell 'fpu_i/addSameSign_0'
+Finished Parsing XDC File [d:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.gen/sources_1/bd/fpu/ip/fpu_addSameSign_0_0/fpu_addSameSign_0_0/fpu_addSameSign_0_0_in_context.xdc] for cell 'fpu_i/addSameSign_0'
+Parsing XDC File [d:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.gen/sources_1/bd/fpu/ip/fpu_mux_0_0/fpu_mux_0_0/fpu_mux_0_0_in_context.xdc] for cell 'fpu_i/mux_0'
+Finished Parsing XDC File [d:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.gen/sources_1/bd/fpu/ip/fpu_mux_0_0/fpu_mux_0_0/fpu_mux_0_0_in_context.xdc] for cell 'fpu_i/mux_0'
+Parsing XDC File [d:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.gen/sources_1/bd/fpu/ip/fpu_mux_1_0/fpu_mux_1_0/fpu_mux_1_0_in_context.xdc] for cell 'fpu_i/mux_1'
+Finished Parsing XDC File [d:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.gen/sources_1/bd/fpu/ip/fpu_mux_1_0/fpu_mux_1_0/fpu_mux_1_0_in_context.xdc] for cell 'fpu_i/mux_1'
+Parsing XDC File [d:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.gen/sources_1/bd/fpu/ip/fpu_mux_2_0/fpu_mux_2_0/fpu_mux_2_0_in_context.xdc] for cell 'fpu_i/mux_2'
+Finished Parsing XDC File [d:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.gen/sources_1/bd/fpu/ip/fpu_mux_2_0/fpu_mux_2_0/fpu_mux_2_0_in_context.xdc] for cell 'fpu_i/mux_2'
+Parsing XDC File [d:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.gen/sources_1/bd/fpu/ip/fpu_controlUnit_0_0/fpu_controlUnit_0_0/fpu_controlUnit_0_0_in_context.xdc] for cell 'fpu_i/controlUnit_0'
+Finished Parsing XDC File [d:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.gen/sources_1/bd/fpu/ip/fpu_controlUnit_0_0/fpu_controlUnit_0_0/fpu_controlUnit_0_0_in_context.xdc] for cell 'fpu_i/controlUnit_0'
+Parsing XDC File [d:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.gen/sources_1/bd/fpu/ip/fpu_outputStage_0_0/fpu_outputStage_0_0/fpu_outputStage_0_0_in_context.xdc] for cell 'fpu_i/outputStage_0'
+Finished Parsing XDC File [d:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.gen/sources_1/bd/fpu/ip/fpu_outputStage_0_0/fpu_outputStage_0_0/fpu_outputStage_0_0_in_context.xdc] for cell 'fpu_i/outputStage_0'
+Parsing XDC File [d:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.gen/sources_1/bd/fpu/ip/fpu_multiplier_0_0/fpu_multiplier_0_0/fpu_multiplier_0_0_in_context.xdc] for cell 'fpu_i/multiplier_0'
+Finished Parsing XDC File [d:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.gen/sources_1/bd/fpu/ip/fpu_multiplier_0_0/fpu_multiplier_0_0/fpu_multiplier_0_0_in_context.xdc] for cell 'fpu_i/multiplier_0'
+Parsing XDC File [d:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.gen/sources_1/bd/fpu/ip/fpu_multLeftShift_0_0/fpu_multLeftShift_0_0/fpu_multLeftShift_0_0_in_context.xdc] for cell 'fpu_i/multLeftShift_0'
+Finished Parsing XDC File [d:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.gen/sources_1/bd/fpu/ip/fpu_multLeftShift_0_0/fpu_multLeftShift_0_0/fpu_multLeftShift_0_0_in_context.xdc] for cell 'fpu_i/multLeftShift_0'
+Parsing XDC File [d:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.gen/sources_1/bd/fpu/ip/fpu_multRightShift_0_0/fpu_multRightShift_0_0/fpu_multRightShift_0_0_in_context.xdc] for cell 'fpu_i/multRightShift_0'
+Finished Parsing XDC File [d:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.gen/sources_1/bd/fpu/ip/fpu_multRightShift_0_0/fpu_multRightShift_0_0/fpu_multRightShift_0_0_in_context.xdc] for cell 'fpu_i/multRightShift_0'
+Parsing XDC File [d:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.gen/sources_1/bd/fpu/ip/fpu_mux_3_0/fpu_mux_3_0/fpu_mux_3_0_in_context.xdc] for cell 'fpu_i/mux_3'
+Finished Parsing XDC File [d:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.gen/sources_1/bd/fpu/ip/fpu_mux_3_0/fpu_mux_3_0/fpu_mux_3_0_in_context.xdc] for cell 'fpu_i/mux_3'
+Parsing XDC File [d:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.gen/sources_1/bd/fpu/ip/fpu_mux_4_0/fpu_mux_4_0/fpu_mux_4_0_in_context.xdc] for cell 'fpu_i/mux_4'
+Finished Parsing XDC File [d:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.gen/sources_1/bd/fpu/ip/fpu_mux_4_0/fpu_mux_4_0/fpu_mux_4_0_in_context.xdc] for cell 'fpu_i/mux_4'
+Parsing XDC File [d:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.gen/sources_1/bd/fpu/ip/fpu_mux_5_0/fpu_mux_5_0/fpu_mux_5_0_in_context.xdc] for cell 'fpu_i/mux_5'
+Finished Parsing XDC File [d:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.gen/sources_1/bd/fpu/ip/fpu_mux_5_0/fpu_mux_5_0/fpu_mux_5_0_in_context.xdc] for cell 'fpu_i/mux_5'
+Parsing XDC File [d:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.gen/sources_1/bd/fpu/ip/fpu_flipFlop_0_0/fpu_flipFlop_0_0/fpu_flipFlop_0_0_in_context.xdc] for cell 'fpu_i/flipFlop_0'
+Finished Parsing XDC File [d:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.gen/sources_1/bd/fpu/ip/fpu_flipFlop_0_0/fpu_flipFlop_0_0/fpu_flipFlop_0_0_in_context.xdc] for cell 'fpu_i/flipFlop_0'
+Parsing XDC File [d:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.gen/sources_1/bd/fpu/ip/fpu_mux4_1_0_0/fpu_mux4_1_0_0/fpu_mux4_1_0_0_in_context.xdc] for cell 'fpu_i/mux4_1_0'
+Finished Parsing XDC File [d:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.gen/sources_1/bd/fpu/ip/fpu_mux4_1_0_0/fpu_mux4_1_0_0/fpu_mux4_1_0_0_in_context.xdc] for cell 'fpu_i/mux4_1_0'
+Parsing XDC File [d:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.gen/sources_1/bd/fpu/ip/fpu_multRightShiftUn_0_1/fpu_multRightShiftUn_0_1/fpu_multRightShiftUn_0_1_in_context.xdc] for cell 'fpu_i/multRightShiftUn_0'
+Finished Parsing XDC File [d:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.gen/sources_1/bd/fpu/ip/fpu_multRightShiftUn_0_1/fpu_multRightShiftUn_0_1/fpu_multRightShiftUn_0_1_in_context.xdc] for cell 'fpu_i/multRightShiftUn_0'
+Parsing XDC File [d:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.gen/sources_1/bd/fpu/ip/fpu_flipFlop_1_0/fpu_flipFlop_1_0/fpu_flipFlop_1_0_in_context.xdc] for cell 'fpu_i/flipFlop_1'
+Finished Parsing XDC File [d:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.gen/sources_1/bd/fpu/ip/fpu_flipFlop_1_0/fpu_flipFlop_1_0/fpu_flipFlop_1_0_in_context.xdc] for cell 'fpu_i/flipFlop_1'
+Parsing XDC File [d:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.gen/sources_1/bd/fpu/ip/fpu_checkMultExponent_0_0/fpu_checkMultExponent_0_0/fpu_checkMultExponent_0_0_in_context.xdc] for cell 'fpu_i/checkMultExponent_0'
+Finished Parsing XDC File [d:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.gen/sources_1/bd/fpu/ip/fpu_checkMultExponent_0_0/fpu_checkMultExponent_0_0/fpu_checkMultExponent_0_0_in_context.xdc] for cell 'fpu_i/checkMultExponent_0'
+Parsing XDC File [d:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.gen/sources_1/bd/fpu/ip/fpu_mux4_1_1_0/fpu_mux4_1_1_0/fpu_mux4_1_1_0_in_context.xdc] for cell 'fpu_i/mux4_1_1'
+Finished Parsing XDC File [d:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.gen/sources_1/bd/fpu/ip/fpu_mux4_1_1_0/fpu_mux4_1_1_0/fpu_mux4_1_1_0_in_context.xdc] for cell 'fpu_i/mux4_1_1'
+Parsing XDC File [d:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.gen/sources_1/bd/fpu/ip/fpu_orGate_0_0/fpu_orGate_0_0/fpu_orGate_0_0_in_context.xdc] for cell 'fpu_i/orGate_0'
+Finished Parsing XDC File [d:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.gen/sources_1/bd/fpu/ip/fpu_orGate_0_0/fpu_orGate_0_0/fpu_orGate_0_0_in_context.xdc] for cell 'fpu_i/orGate_0'
+Parsing XDC File [d:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.gen/sources_1/bd/fpu/ip/fpu_xorGate_0_0/fpu_xorGate_0_0/fpu_xorGate_0_0_in_context.xdc] for cell 'fpu_i/xorGate_0'
+Finished Parsing XDC File [d:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.gen/sources_1/bd/fpu/ip/fpu_xorGate_0_0/fpu_xorGate_0_0/fpu_xorGate_0_0_in_context.xdc] for cell 'fpu_i/xorGate_0'
+Parsing XDC File [D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.srcs/constrs_1/new/fpu_constraints.xdc]
+Finished Parsing XDC File [D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.srcs/constrs_1/new/fpu_constraints.xdc]
+Parsing XDC File [D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 999.738 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 999.738 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 999.738 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 999.738 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for fpu_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for fpu_i/inputStage_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for fpu_i/preAdder_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for fpu_i/shiftEquExp_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for fpu_i/signAdder_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for fpu_i/addDiffSign_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for fpu_i/addSameSign_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for fpu_i/mux_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for fpu_i/mux_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for fpu_i/mux_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for fpu_i/controlUnit_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for fpu_i/outputStage_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for fpu_i/multiplier_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for fpu_i/multLeftShift_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for fpu_i/multRightShift_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for fpu_i/xlslice_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for fpu_i/mux_3. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for fpu_i/mux_4. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for fpu_i/mux_5. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for fpu_i/flipFlop_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for fpu_i/xlslice_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for fpu_i/mux4_1_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for fpu_i/multRightShiftUn_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for fpu_i/flipFlop_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for fpu_i/checkMultExponent_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for fpu_i/xlslice_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for fpu_i/xlconstant_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for fpu_i/mux4_1_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for fpu_i/xlconstant_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for fpu_i/xlconstant_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for fpu_i/xlslice_3. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for fpu_i/xlslice_4. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for fpu_i/xlslice_5. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for fpu_i/orGate_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for fpu_i/xorGate_0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 999.738 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 999.738 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 999.738 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 999.738 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 999.738 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 1009.898 ; gain = 10.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 1015.688 ; gain = 15.949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 1015.688 ; gain = 15.949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 1015.688 ; gain = 15.949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 1015.688 ; gain = 15.949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 1015.688 ; gain = 15.949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 1015.688 ; gain = 15.949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------------------+----------+
+|      |BlackBox name             |Instances |
++------+--------------------------+----------+
+|1     |fpu_addDiffSign_0_0       |         1|
+|2     |fpu_addSameSign_0_0       |         1|
+|3     |fpu_checkMultExponent_0_0 |         1|
+|4     |fpu_controlUnit_0_0       |         1|
+|5     |fpu_flipFlop_0_0          |         1|
+|6     |fpu_flipFlop_1_0          |         1|
+|7     |fpu_inputStage_0_0        |         1|
+|8     |fpu_multLeftShift_0_0     |         1|
+|9     |fpu_multRightShiftUn_0_1  |         1|
+|10    |fpu_multRightShift_0_0    |         1|
+|11    |fpu_multiplier_0_0        |         1|
+|12    |fpu_mux4_1_0_0            |         1|
+|13    |fpu_mux4_1_1_0            |         1|
+|14    |fpu_mux_0_0               |         1|
+|15    |fpu_mux_1_0               |         1|
+|16    |fpu_mux_2_0               |         1|
+|17    |fpu_mux_3_0               |         1|
+|18    |fpu_mux_4_0               |         1|
+|19    |fpu_mux_5_0               |         1|
+|20    |fpu_orGate_0_0            |         1|
+|21    |fpu_outputStage_0_0       |         1|
+|22    |fpu_preAdder_0_0          |         1|
+|23    |fpu_shiftEquExp_0_0       |         1|
+|24    |fpu_signAdder_0_0         |         1|
+|25    |fpu_xorGate_0_0           |         1|
++------+--------------------------+----------+
+
+Report Cell Usage: 
++------+------------------------+------+
+|      |Cell                    |Count |
++------+------------------------+------+
+|1     |fpu_addDiffSign_0       |     1|
+|2     |fpu_addSameSign_0       |     1|
+|3     |fpu_checkMultExponent_0 |     1|
+|4     |fpu_controlUnit_0       |     1|
+|5     |fpu_flipFlop_0          |     1|
+|6     |fpu_flipFlop_1          |     1|
+|7     |fpu_inputStage_0        |     1|
+|8     |fpu_multLeftShift_0     |     1|
+|9     |fpu_multRightShiftUn_0  |     1|
+|10    |fpu_multRightShift_0    |     1|
+|11    |fpu_multiplier_0        |     1|
+|12    |fpu_mux4_1_0            |     1|
+|13    |fpu_mux4_1_1            |     1|
+|14    |fpu_mux_0               |     1|
+|15    |fpu_mux_1               |     1|
+|16    |fpu_mux_2               |     1|
+|17    |fpu_mux_3               |     1|
+|18    |fpu_mux_4               |     1|
+|19    |fpu_mux_5               |     1|
+|20    |fpu_orGate_0            |     1|
+|21    |fpu_outputStage_0       |     1|
+|22    |fpu_preAdder_0          |     1|
+|23    |fpu_shiftEquExp_0       |     1|
+|24    |fpu_signAdder_0         |     1|
+|25    |fpu_xorGate_0           |     1|
+|26    |IBUF                    |    67|
+|27    |OBUF                    |    33|
++------+------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 1015.688 ; gain = 15.949
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:31 ; elapsed = 00:00:44 . Memory (MB): peak = 1015.688 ; gain = 15.949
+Synthesis Optimization Complete : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 1015.688 ; gain = 15.949
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1022.461 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1031.801 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+99 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:58 ; elapsed = 00:01:03 . Memory (MB): peak = 1031.801 ; gain = 32.062
+INFO: [Common 17-1381] The checkpoint 'D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Vivado/fpu_comparch/fpu_comparch.runs/synth_1/fpu_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file fpu_wrapper_utilization_synth.rpt -pb fpu_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Mar  7 11:17:58 2022...

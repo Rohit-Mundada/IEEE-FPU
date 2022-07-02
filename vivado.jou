@@ -1,0 +1,40 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Mar  7 16:14:57 2022
+# Process ID: 11204
+# Current directory: D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Assignment/Assignment 1/fpu_comparch
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14964 D:\Rohit BITS Data\3_Third Year\Second Sem\Comp Arch\Assignment\Assignment 1\fpu_comparch\fpu_comparch.xpr
+# Log file: D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Assignment/Assignment 1/fpu_comparch/vivado.log
+# Journal file: D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Assignment/Assignment 1/fpu_comparch\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Assignment/Assignment 1/fpu_comparch/fpu_comparch.xpr}
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Assignment/Assignment 1/fpu_comparch/fpu_comparch.srcs/sources_1/bd/fpu/fpu.bd}}] -no_script -reset -force -quiet
+remove_files  {{D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Assignment/Assignment 1/fpu_comparch/fpu_comparch.srcs/sources_1/bd/fpu/fpu.bd}}
+launch_simulation
+source fpu_tb1.tcl
+add_force {/fpu_tb1/Data_1} -radix bin {01000000001001010001111010111000 0ns}
+add_force {/fpu_tb1/Data_2} -radix bin {00111111101000000000000000000000 0ns}
+run 100 ps
+add_force {/fpu_tb1/In_Data_Valid} -radix bin {1 0ns}
+run 100 ps
+add_force {/fpu_tb1/In_Data_Valid} -radix bin {0 0ns}
+run 100 ps
+run 100 ps
+run 100 ps
+add_force {/fpu_tb1/Op} -radix bin {1 0ns}
+run 100 ps
+add_force {/fpu_tb1/In_Data_Valid} -radix bin {1 0ns}
+run 100 ps
+add_force {/fpu_tb1/In_Data_Valid} -radix hex {0 0ns}
+run 100 ps
+add_force {/fpu_tb1/Op} -radix bin {0 0ns}
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+close_sim
